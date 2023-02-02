@@ -13,4 +13,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default Home;git reset --hard origin/main
