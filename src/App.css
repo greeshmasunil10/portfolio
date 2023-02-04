@@ -72,6 +72,13 @@ div.courier {
   /* font-size: 20px; */
 }
 
+h3 {
+  color: #a8b2d1;
+  font-size: 75px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
 h2 {
   color: #a8b2d1;
   font-size: 75px;
@@ -84,7 +91,6 @@ h1 {
   font-size: 75px;
   margin-top: 10px;
   margin-bottom: 1px;
-  /* font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
 }
 
 h2.dark {

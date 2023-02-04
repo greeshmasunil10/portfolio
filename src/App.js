@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Education from "./Education";
 import AboutMe from "./AboutMe";
+import MyWork from './MyWork';
 import gsIcon from './GS.ico';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
               </li>
               <li>
                 <Link to="/AboutMe">About</Link>
+              </li>
+              <li>
+                <Link to="/MyWork">My Work</Link>
               </li>
               <li>
                 <Link to="/experience">Experience</Link>
@@ -41,6 +45,7 @@ function App() {
           <Route exact path="/Skills" element={<Skills />} />
           <Route exact path="/Education" element={<Education />} />
           <Route exact path="/AboutMe" element={<AboutMe />} />
+          <Route exact path="/MyWork" element={<MyWork />} />
         </Routes>
       </div>
     </BrowserRouter>
