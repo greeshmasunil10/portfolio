@@ -1,15 +1,26 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => (
   <div class="body">
     <div class="courier">hi, my name is</div>
+
     <h2>GREESHMA SUNIL</h2>
-    <section>
-      <p>
-        I am a highly motivated software developer with a passion for creating intuitive and scalable applications. With several years of experience in developing full-stack applications, I have a strong foundation in software development and a dedication to constantly improve my skills.
-      </p>  
-    </section>
-    
+    <h2 class="dark">imagine. engineer. excel.</h2>
+    <div class="contentStyle">
+      <div class="content" style={{color:"#808594"}}>
+
+          I am a creative and innovative software developer who is constantly
+          seeking new challenges.
+
+      </div>
+    </div>
+
+    <div>
+      <Link to="/AboutMe">
+        <button class="btn">Learn more about me.</button>
+      </Link>
+    </div>
   </div>
 );
 
