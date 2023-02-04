@@ -1,18 +1,28 @@
-import React from 'react';
+import React from "react";
 
 const Education = () => (
   <section>
     <h2>Education</h2>
-    <ul>
+    <ul className="contentStyle">
       <li>
-        BSc in Computer Science, ABC University, Sep 2016 - Jun 2020
+        <div class="content">Master of Applied Computer Science - Concordia University, Montreal</div>
         <ul>
-          <li>GPA: 3.8/4.0</li>
-          <li>Relevant courses: Database Systems, Artificial Intelligence, Web Development</li>
+          <li>
+            Relevant Courses: Algorithm Design Techniques, Distributed Systems,
+            Artificial Intelligence
+          </li>
+        </ul>
+      </li>
+      <li>
+      <div class="content">Bachelor of Technology: Computer Science - VIT University, Vellore</div>
+        <ul>
+          <li>
+            Relevant Courses: Data Structures, Database Systems, Software
+            Engineering, Web Programming
+          </li>
         </ul>
       </li>
     </ul>
   </section>
 );
-
 export default Education;

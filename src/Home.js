@@ -10,7 +10,7 @@ const Home = () => (
     <div class="contentStyle">
       <div class="content" style={{color:"#808594"}}>
 
-          I am a creative and innovative software developer who is constantly
+          I am a software developer who is constantly
           seeking new challenges.
 
       </div>
