@@ -1,7 +1,7 @@
 import React from "react";
 
 const Education = () => (
-  <section>
+  <div class="body">
     <h2>Education</h2>
     <ul className="contentStyle">
       <li>
@@ -23,6 +23,6 @@ const Education = () => (
         </ul>
       </li>
     </ul>
-  </section>
+  </div>
 );
 export default Education;

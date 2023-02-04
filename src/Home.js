@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => (
   <div class="body">
+
+    <div class="courier" style={{fontSize:50}}>(under contruction.)</div><br/>
     <div class="courier">hi, my name is</div>
 
     <h2>GREESHMA SUNIL</h2>
