@@ -6,15 +6,29 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Education from "./Education";
 import AboutMe from "./AboutMe";
-import MyWork from './MyWork';
-import gsIcon from './GS.ico';
+import MyWork from "./MyWork";
+import gsIcon from "./GS.ico";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <header className="header">
-        <img src={gsIcon} alt="GS Icon" style={{position: 'absolute', top: '0', left: '0', width: 75, height: 50, paddingLeft:10, paddingTop:10}}  />
+          <Link to="/">
+            <img
+              src={gsIcon}
+              alt="GS Icon"
+              style={{
+                position: "absolute",
+                top: "0",
+                left: "0",
+                width: 75,
+                height: 50,
+                paddingLeft: 10,
+                paddingTop: 10,
+              }}
+            />
+          </Link>
           <nav>
             <ul className="header__nav">
               <li>

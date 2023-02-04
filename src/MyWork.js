@@ -25,12 +25,10 @@ function MyWork() {
         Multithreading, Git
       </div>
       <div>
-        <strong>Project description:</strong> Led the team in creating a
-        strategy board game based on Java, utilizing design patterns such as MVC
-        and Observer pattern for loose coupling between objects and Strategy
-        pattern for implementing bot players.
+        <strong>Project description:</strong> A strategy board game based on Java, utilizing design patterns such as MVC
+        and Observer pattern for loose coupling between objects and Strategy pattern for implementing bot players.
       </div>
-      <a href="https://github.com/">GitHub</a>
+      <a href="https://github.com/greeshmasunil10">GitHub</a>
       </div></div>
     </div>
   );
