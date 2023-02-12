@@ -10,9 +10,8 @@ const AboutMe = () => {
         </div>
         <div class="content">
           I am a computer science master with a passion for coding and creating.
-          I've got a solid background in various programming languages like
-          Java, Python, and JavaScript, and I've honed my skills through
-          hands-on experience working with a range of cutting-edge technologies.
+          With a strong foundation in programming languages such as Java, Python, JavaScript, React.js, and Node.js, I have
+          honed my skills through hands-on experience working with a range of cutting-edge technologies.
           <p />
           But I'm more than just a code monkey. I'm a problem solver at heart,
           always seeking out new and innovative ways to improve the lives of my clients 
