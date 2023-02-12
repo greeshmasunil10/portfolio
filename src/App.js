@@ -39,9 +39,6 @@ function App() {
                 <Link to="/AboutMe">About</Link>
               </li>
               <li>
-                <Link to="/MyWork">My Work</Link>
-              </li>
-              <li>
                 <Link to="/experience">Experience</Link>
               </li>
               <li>
@@ -49,6 +46,9 @@ function App() {
               </li>
               <li>
                 <Link to="/education">Education</Link>
+              </li>
+              <li>
+                <Link to="/MyWork">Projects</Link>
               </li>
             </ul>
           </nav>

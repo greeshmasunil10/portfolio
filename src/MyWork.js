@@ -3,7 +3,7 @@ import React from "react";
 function MyWork() {
   return (
     <div class="body">
-      <h2>My Work</h2>
+      <h2>Projects</h2>
       <div class="contentStyle">
         <div class="content">
       <h3>E-Commerce Platform</h3>

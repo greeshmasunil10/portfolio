@@ -15,15 +15,9 @@ const AboutMe = () => {
           hands-on experience working with a range of cutting-edge technologies.
           <p />
           But I'm more than just a code monkey. I'm a problem solver at heart,
-          always seeking out new and innovative ways to make life easier for my
-          users. Whether it's leading the development of an AI-powered virtual
-          agent that serves over 100,000 daily active users or volunteering as a
-          caretaker at an animal rescue network, I'm always looking for ways to
-          give back and make a positive impact.
+          always seeking out new and innovative ways to improve the lives of my clients 
+          and make a positive impact.
           <p />
-          So if you're looking for a software developer who's not afraid to
-          think outside the box and tackle the tough challenges, look no
-          further! I'm ready and eager to put my skills to work for you.
         </div>
       </div>
     </div>
