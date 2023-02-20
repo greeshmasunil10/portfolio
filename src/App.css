@@ -219,6 +219,12 @@ ul {
   display: table-row;
 }
 
+a{
+  display: flex;
+  color: #2055b6;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   .jumbotron h2 {
     margin-top: 10px;

@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => (
   <div className="skills">
     <h2 style={{ textAlign: "center" }}>Skills</h2>
-    <div class="contentStyle">
+    <div class="contentStyle"  >
     <ul className="skills-list">
       <li className="skills-list-item">
         <span className="skills-list-title">Programming Languages</span>: Java,
