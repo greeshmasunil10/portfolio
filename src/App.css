@@ -40,7 +40,7 @@ body {
 }
 
 section {
-  max-width: 800px;
+  max-width: 100vb;
   margin: 20px auto;
   padding: 20px;
   /* font-size: 20px; */
@@ -49,7 +49,7 @@ section {
 }
 
 div.body {
-  max-width: 800px;
+  max-width:120vb;
   margin: 20px auto;
   padding: 20px;
   font-size: 20px;
@@ -57,10 +57,10 @@ div.body {
 }
 
 div.content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0px auto;
   padding: 20px;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 500;
   color: var(--font-body-light);
   font-family: Arial, Helvetica, sans-serif;
@@ -113,13 +113,13 @@ ul {
   font-family: 'Courier New', Courier, monospace;
 
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
   border: 2px solid rgb(82, 81, 88);
-  padding: 20px 200px;
+  padding: 10px 50px;
   border-radius: 15px;
 
 }
@@ -267,4 +267,89 @@ a{
     background-position: 0% 50%;
   }
 }
+
+.app-img {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  filter: blur(0);
+  transition: filter 0.3s ease-in-out;
+}
+
+.app-img {
+  width: 100%;
+  height: auto;
+  filter: blur(0);
+  transition: filter 0.3s ease-in-out;
+}
+
+.app-label {
+  position: absolute;
+  top: 50%;
+  left:35%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #000000;
+  /* border: 2px solid #131e15; */
+  background-color: var(--neon-green);
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+a:hover .app-img {
+  filter: blur(5px);
+}
+
+a:hover .app-label {
+  opacity: 1;
+}
+
+.img-url-label{
+  opacity: 0;
+}
+
+/* For small screens (up to 576px) */
+@media (max-width: 576px) {
+  .app-img {
+    width: 100%;
+    height: auto;
+  }
+  .app-label{
+    opacity: 0;
+    padding: 10px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    /*font-weight: bold;
+    color:#010814;
+    background-color: #00ffae; */
+  }
+  .img-url-label{
+    opacity: 1;
+    color: #787fe8;
+    text-decoration-line:underline;
+  }
+}
+
+/* For medium screens (between 576px and 992px) */
+@media (min-width: 576px) and (max-width: 992px) {
+  .app-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* For large screens (above 992px) */
+@media (min-width: 992px) {
+  .app-img {
+    width: 70%;
+    height: auto;
+  }
+}
+
 

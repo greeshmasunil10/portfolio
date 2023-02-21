@@ -5,20 +5,25 @@ const Education = () => (
     <h2>Education</h2>
     <ul className="contentStyle">
       <li>
-        <div class="content">Master of Applied Computer Science - Concordia University, Montreal</div>
+        <div class="content">
+          Master of Applied Computer Science - Concordia University, Montreal
+        </div>
+
         <ul>
           <li>
-            Relevant Courses: Algorithm Design Techniques, Distributed Systems,
-            Artificial Intelligence
+            <p>Algorithm Design Techniques, Distributed Systems,
+            Artificial Intelligence</p>
           </li>
         </ul>
       </li>
       <li>
-      <div class="content">Bachelor of Technology: Computer Science - VIT University, Vellore</div>
+        <div class="content">
+          Bachelor of Technology: Computer Science - VIT University, Vellore
+        </div>
         <ul>
           <li>
-            Relevant Courses: Data Structures, Database Systems, Software
-            Engineering, Web Programming
+            <p>Data Structures, Database Systems, Software
+            Engineering, Web Programming</p>
           </li>
         </ul>
       </li>

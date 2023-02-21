@@ -36,20 +36,21 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/AboutMe">About</Link>
+                <Link to="/MyWork">Projects</Link>
               </li>
               <li>
-                <Link to="/experience">Experience</Link>
+                <Link to="/AboutMe">About</Link>
               </li>
+              {/* <li>
+                <Link to="/experience">Experience</Link>
+              </li> */}
               <li>
                 <Link to="/skills">Skills</Link>
               </li>
               <li>
                 <Link to="/education">Education</Link>
               </li>
-              <li>
-                <Link to="/MyWork">Projects</Link>
-              </li>
+              
             </ul>
           </nav>
         </header>
