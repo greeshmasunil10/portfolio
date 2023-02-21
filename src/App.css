@@ -221,7 +221,7 @@ ul {
 
 a{
   display: flex;
-  color: #2055b6;
+  color: #748fc1;
   text-decoration: none;
 }
 
@@ -302,11 +302,11 @@ a{
 
 }
 
-a:hover .app-img {
+.a-image:hover .app-img {
   filter: blur(5px);
 }
 
-a:hover .app-label {
+.a-image:hover .app-label {
   opacity: 1;
 }
 

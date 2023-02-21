@@ -53,7 +53,6 @@ function MyWork() {
 
           <br />
 
-
           <ProjectCard
             projectName="RISK World Conquest Game"
             technologiesUsed="Java, Swing, JUnit, Design
@@ -68,6 +67,13 @@ function MyWork() {
           />
 
           <br />
+
+          <p style={{fontSize:"25px"}}>
+            More projects on{" "}
+            <a href="https://github.com/greeshmasunil10" target="_blank" style={{display:"inline-block", textDecoration:"underline"}}>
+              Github
+            </a>
+          </p>
         </div>
       </div>
     </div>

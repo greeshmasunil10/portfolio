@@ -5,9 +5,9 @@ import Experience from "./Experience";
 
 const Home = () => (
   <div class="body">
-    <div class="courier" style={{ fontSize: 35 }}>
+    {/* <div class="courier" style={{ fontSize: 35 }}>
       .(under contruction)
-    </div>
+    </div> */}
     <br />
     <br />
     <div style={{ fontSize: "35px" }}>

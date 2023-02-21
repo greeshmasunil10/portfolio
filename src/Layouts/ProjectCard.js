@@ -7,10 +7,9 @@ function ProjectCard(props) {
       <div>
         <strong>Technologies used:</strong> {props.technologiesUsed}
         <p />
-        <a href={props.liveAppLink} style={{ position: "relative" }}>
+        <a className="a-image" href={props.liveAppLink} style={{ position: "relative" }} target="_blank">
           <img
             src={props.imageSrc}
-            target="_blank"
             class="app-img"
           />
           <span class="app-label"
