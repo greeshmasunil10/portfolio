@@ -7,6 +7,7 @@ function ProjectCard(props) {
       <div>
         <strong>Technologies used:</strong> {props.technologiesUsed}
         <p />
+
         <a className="a-image" href={props.liveAppLink} style={{ position: "relative" }} target="_blank">
           <img
             src={props.imageSrc}
@@ -23,6 +24,7 @@ function ProjectCard(props) {
         >
           {props.appURLText}
         </a>
+        
         <strong>Description:</strong> {props.projectDescription}
       </div>
     </div>

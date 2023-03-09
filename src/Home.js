@@ -1,39 +1,54 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef } from "react";
 import AboutMe from "./AboutMe";
+import Projects from "./Projects";
+import Education from "./Education";
+import Skills from "./Skills";
 import Experience from "./Experience";
+import Intro from "./Intro";
+import ScrollToTopButton from "./Controller/ScrollToTopButton";
+import AnimatedCursor from "react-animated-cursor";
 
-const Home = () => (
-  <div class="body">
-    {/* <div class="courier" style={{ fontSize: 35 }}>
-      .(under contruction)
-    </div> */}
-    <br />
-    <br />
-    <div style={{ fontSize: "35px" }}>
-      Welcome to my portfolio website!
-      <p />
-    </div>
-    <div class="courier">hi, my name is</div>
+const Home = () => {
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
-    <h2>GREESHMA SUNIL</h2>
-    {/* <h2 class="dark">imagine. engineer. excel.</h2> */}
-    <div class="contentStyle">
-      <div class="content" style={{ color: "#808594" }}>
-        I am a software developer dedicated to solving challenges and making a
-        positive impact through technology.
-      </div>
-    </div>
-    <p />
+  return (
     <div>
-      <Link to="/AboutMe">
-        <button class="btn">Learn more about me.</button>
-      </Link>
-    </div>
 
-    {/* <AboutMe/> */}
-    {/* <Experience/> */}
-  </div>
-);
+
+      <div id="home-section" className="section">
+        <Intro />
+
+        <div id="about-me-section" className="section">
+          <AboutMe />
+        </div>
+        <div id="projects-section" className="section">
+          <Projects />
+        </div>
+        <div id="education-section" className="section">
+          <Education />
+        </div>
+        <div id="skills-section" className="section">
+          <Skills />
+        </div>
+      </div>
+      <ScrollToTopButton handleScrollTop={handleScrollTop} />
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={16}
+        color='200, 0, 116'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        trailingSpeed={20}
+        trailingDelay={0}
+      />
+    </div>
+  );
+};
 
 export default Home;

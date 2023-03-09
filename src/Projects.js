@@ -4,7 +4,7 @@ import holyGuidanceImg from "./holyguidance.jpg";
 import lottoMaxImg from "./lottomax.jpg";
 import ProjectCard from "./Layouts/ProjectCard";
 
-function MyWork() {
+function Projects() {
   return (
     <div class="body">
       <h2>Projects</h2>
@@ -80,4 +80,4 @@ function MyWork() {
   );
 }
 
-export default MyWork;
+export default Projects;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollToSectionButton from "./Controller/ScrollToSectionButton";
 
 
 const AboutMe = () => {
@@ -22,9 +23,11 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
+      <ScrollToSectionButton sectionId="projects-section" buttonName="See my work." />
+{/* 
       <Link to="/MyWork">
         <button class="btn">See my work.</button>
-      </Link>
+      </Link> */}
     </div>
       
     </div>
