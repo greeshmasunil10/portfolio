@@ -14,18 +14,18 @@ const AboutMe = () => {
           .me
         </div>
         <div className="content">
-          My expertise in computer science extends to a master's degree, and I
-          find great satisfaction in the art of coding and bringing ideas to
-          life.
+          I'm a computer science professional with a master's degree and a
+          passion for coding. My expertise includes programming languages like
+          Java, Python, JavaScript, React.js, and Node.js.
           <p />
-          With a strong foundation in programming languages such as Java,
-          Python, JavaScript, React.js, and Node.js, I have honed my skills
-          through hands-on experience working with a range of cutting-edge
+          In my professional life, I work as a Conversational AI developer,
+          designing and implementing solutions that help businesses interact
+          with their customers more effectively using the latest cutting-edge
           technologies.
           <p />
-          But I'm more than just a code monkey. I'm a problem solver at heart,
-          always seeking out new and innovative ways to improve the lives of my
-          clients and make a positive impact.
+          But I'm more than just a code monkey. I'm always seeking out new and
+          innovative ways to improve the lives of my clients and make a positive
+          impact.
           <p />
         </div>
       </div>
