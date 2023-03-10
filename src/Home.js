@@ -36,13 +36,13 @@ const Home = () => {
 
       <ScrollToTopButton handleScrollTop={handleScrollTop} />
       <AnimatedCursor
+        color="0, 226, 151"
         innerSize={8}
-        outerSize={16}
-        color='200, 0, 116'
+        outerSize={25}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
-        trailingSpeed={20}
+        trailingSpeed={8}
         trailingDelay={0}
       />
     </div>

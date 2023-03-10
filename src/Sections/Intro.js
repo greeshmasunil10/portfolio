@@ -1,34 +1,43 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ScrollToSectionButton from "../Helpers/ScrollToSectionButton";
+import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   return (
     <div className="body">
-      <div className="">
-      <br />
-      <br />
-      <h2>
-        Welcome to my portfolio website!
+      <div className="intro">
+        <div className="courier">hi, my name is</div>
+        <br />
+        <h1 className="my-name">Greeshma Sunil</h1>
+        <div className="contentStyle">
+          <div className="tagline">
+            <TypeAnimation
+              sequence={[
+                "Software Engineer",
+                1000,
+                "Problem Solver",
+                2000,
+                "Creative coder",
+                2000,
+                () => {},
+              ]}
+              cursor={true}
+              repeat={Infinity}
+              // style={{fontSize:"40px"}}
+              
+            />
+          </div>
+        </div>
         <p />
-      </h2>
-      <div className="courier">hi, my name is</div>
-
-      <h2 className="heading">GREESHMA SUNIL</h2>
-      <div className="contentStyle">
-        <div className="content">
-          I am a software developer dedicated to solving challenges and making a
-          positive impact through technology.
+        <div style={{ paddingTop: "20px" }}>
+          <ScrollToSectionButton
+            sectionId="about-me-section"
+            buttonName="Learn more about me"
+          />
         </div>
       </div>
-      <p />
-      <div style={{ paddingTop: "20px" }}>
-        <ScrollToSectionButton
-          sectionId="about-me-section"
-          buttonName="Learn more about me"
-        />
-      </div>
-    </div></div>
+    </div>
   );
 };
 

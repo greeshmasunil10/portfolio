@@ -12,7 +12,7 @@ import ContactMe from "./Sections/ContactMe";
 import gsIcon from "./Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
 
-const App = () =>{
+const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
@@ -44,17 +44,6 @@ const App = () =>{
               </li>
               <li>
                 <ScrollLink
-                  to="projects-section"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-60}
-                >
-                  Projects
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
                   to="about-me-section"
                   smooth={true}
                   duration={500}
@@ -64,6 +53,18 @@ const App = () =>{
                   About
                 </ScrollLink>
               </li>
+              <li>
+                <ScrollLink
+                  to="projects-section"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-60}
+                >
+                  Projects
+                </ScrollLink>
+              </li>
+
               <li>
                 <ScrollLink
                   to="education-section"
@@ -102,6 +103,6 @@ const App = () =>{
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

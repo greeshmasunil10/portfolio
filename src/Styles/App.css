@@ -1,9 +1,10 @@
 :root {
   --bgm-color: #040a11;
   --neon-green: #00e297;
-  --font-body-light: #97a0bc;
-  --font-body-dark: #808594;
+  --font-body-light: #a3adcd;
+  --font-body-dark: #9499a8;
   --nav-bar-color:rgb(0, 0, 0);
+  --content-size: 1rem;
 }
 
 
@@ -24,8 +25,36 @@
     color: #787fe8;
     text-decoration-line: underline;
   }
-  .header {
+  /* .header {
     opacity: 0;
+  } */
+
+  .my-name{
+    font-size: 3.5rem !important;
+  }
+  .btn{
+    width:fit-content !important;
+    font-size: 20px !important;
+  }
+
+  .tagline{
+    font-size: 30px !important;
+  }
+
+  .header{
+    padding-left: 40px !important;
+  }
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px !important;
+  }
+  
+  .header__nav li {
+    font-size: 12px !important;
+    /* max-width: 40px; */
+    padding: 0 0px;
+
   }
 
   /* .header__nav {
@@ -47,8 +76,6 @@
   .header__nav li:last-child {
     margin-bottom: 0;
   } */
-  
-  
 }
 
 /* For medium screens (between 576px and 992px) */
@@ -72,18 +99,35 @@ body {
   background-color: var(--bgm-color);
   color: var(--font-body-light);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .section {
   min-height: 100vh;
-  /* min-width:100vw; */
-  display: flex; /* add display:flex to make each section a flexbox */
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 1px solid rgba(8, 218, 15, 0.1);
   box-shadow: 0 5px 15px rgba(56, 52, 52, 0.3);
   box-sizing:content-box;
+}
+
+.intro{
+  line-height: 1;
+  width: 100vw;
+}
+
+.tagline{
+  text-align: left;
+  color:var(--font-body-dark);
+  font-size: 40px;
+}
+
+.my-name{
+  font-size: 7rem;
+  font-family: 'Great Vibes', cursive;
+  padding: 1px;
 }
 
 .scroll-to-top-button {
@@ -127,7 +171,7 @@ body {
   border: 1px solid rgba(8, 218, 15, 0.1);
   box-shadow: 0 5px 15px rgba(56, 52, 52, 0.3);
   box-sizing:content-box;
-  width: 100vw;;
+  width: 100vw;
 }
 
 .header__nav {
@@ -143,7 +187,7 @@ body {
 }
 
 .header__nav a {
-  color: #ffffff;
+  color: var(--font-body-light);
   text-decoration: none;
 }
 
@@ -155,14 +199,15 @@ div.body {
   max-width: 120vb;
   margin: 20px auto;
   padding: 20px;
-  font-size: 20px;
+  font-size: 2rem;
+  /* text-align: left; */
 }
 
 div.content {
   max-width: 1000px;
   margin: 0px auto;
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--font-body-dark);
   font-family: Arial, Helvetica, sans-serif;
@@ -178,6 +223,10 @@ div.content {
 p.courier{
   font-size: 20px;
 }
+
+
+
+
 
 .heading {
   color: var(--font-body-light);
@@ -273,17 +322,10 @@ a {
 
 
 .app-img {
-  width: 100%;
+  width: 80%;
   height: auto;
   padding-top: 10px;
   padding-bottom: 20px;
-  filter: blur(0);
-  transition: filter 0.3s ease-in-out;
-}
-
-.app-img {
-  width: 100%;
-  height: auto;
   filter: blur(0);
   transition: filter 0.3s ease-in-out;
 }
