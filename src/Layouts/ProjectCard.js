@@ -2,8 +2,8 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div>
-      <p style={{ fontSize: 30 }}>{props.projectName}</p>
+    <div className="">
+      <p className="courier" style={{ fontSize: 30 }}>{props.projectName}</p>
       <div>
         <strong>Technologies used:</strong> {props.technologiesUsed}
         <p />
@@ -13,7 +13,7 @@ function ProjectCard(props) {
             src={props.imageSrc}
             class="app-img"
           />
-          <span class="app-label"
+          <span className="app-label"
           style={{opacity:`${props.imageLabelOpacity}`}}
           >{props.appURLText}</span>
         </a>

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import AboutMe from "./AboutMe";
-import Projects from "./Projects";
-import Education from "./Education";
-import Skills from "./Skills";
-import Experience from "./Experience";
-import Intro from "./Intro";
-import ScrollToTopButton from "./Controller/ScrollToTopButton";
+import AboutMe from "./Sections/AboutMe";
+import Projects from "./Sections/Projects";
+import Education from "./Sections/Education";
+import Skills from "./Sections/Skills";
+import Experience from "./Sections/Experience";
+import Intro from "./Sections/Intro";
+import ScrollToTopButton from "./Helpers/ScrollToTopButton";
 import AnimatedCursor from "react-animated-cursor";
 
 const Home = () => {
@@ -18,24 +18,22 @@ const Home = () => {
 
   return (
     <div>
-
-
       <div id="home-section" className="section">
         <Intro />
-
-        <div id="about-me-section" className="section">
-          <AboutMe />
-        </div>
-        <div id="projects-section" className="section">
-          <Projects />
-        </div>
-        <div id="education-section" className="section">
-          <Education />
-        </div>
-        <div id="skills-section" className="section">
-          <Skills />
-        </div>
       </div>
+      <div id="about-me-section" className="section">
+        <AboutMe />
+      </div>
+      <div id="projects-section" className="section">
+        <Projects />
+      </div>
+      <div id="education-section" className="section">
+        <Education />
+      </div>
+      <div id="skills-section" className="section">
+        <Skills />
+      </div>
+
       <ScrollToTopButton handleScrollTop={handleScrollTop} />
       <AnimatedCursor
         innerSize={8}

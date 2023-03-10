@@ -1,29 +1,33 @@
 import React from "react";
 
 const Education = () => (
-  <div class="body">
-    <h2>Education</h2>
+  <div className="body">
+    <h2 className="heading">Education</h2>
     <ul className="contentStyle">
       <li>
-        <div class="content">
+        <div className="content">
           Master of Applied Computer Science - Concordia University, Montreal
         </div>
 
         <ul>
           <li>
-            <p>Algorithm Design Techniques, Distributed Systems,
-            Artificial Intelligence</p>
+            <p className="courier">
+              Algorithm Design Techniques, Distributed Systems, Artificial
+              Intelligence
+            </p>
           </li>
         </ul>
       </li>
       <li>
-        <div class="content">
+        <div className="content">
           Bachelor of Technology: Computer Science - VIT University, Vellore
         </div>
         <ul>
           <li>
-            <p>Data Structures, Database Systems, Software
-            Engineering, Web Programming</p>
+            <p className="courier">
+              Data Structures, Database Systems, Software Engineering, Web
+              Programming
+            </p>
           </li>
         </ul>
       </li>

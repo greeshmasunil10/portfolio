@@ -1,28 +1,24 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
+import "./Styles/App.css";
+import "./Styles/Animations.css";
 import Home from "./Home";
-import Experience from "./Experience";
-import Skills from "./Skills";
-import Education from "./Education";
-import AboutMe from "./AboutMe";
-import Projects from "./Projects";
-import ContactMe from "./ContactMe";
-import gsIcon from "./GS.ico";
+import Experience from "./Sections/Experience";
+import Skills from "./Sections/Skills";
+import Education from "./Sections/Education";
+import AboutMe from "./Sections/AboutMe";
+import Projects from "./Sections/Projects";
+import ContactMe from "./Sections/ContactMe";
+import gsIcon from "./Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
 
-function App() {
+const App = () =>{
   return (
     <BrowserRouter>
       <div className="App">
         <header className="header">
           <nav>
             <ul className="header__nav">
-              {/* <li>
-                <ScrollLink to="home-section" smooth={true} duration={500}>
-                  Home
-                </ScrollLink>
-              </li> */}
               <li>
                 <ScrollLink
                   to="home-section"
@@ -68,10 +64,7 @@ function App() {
                   About
                 </ScrollLink>
               </li>
-              {/* <li>
-                <Link to="/experience">Experience</Link>
-              </li> */}
-                            <li>
+              <li>
                 <ScrollLink
                   to="education-section"
                   smooth={true}
@@ -93,7 +86,6 @@ function App() {
                   Skills
                 </ScrollLink>
               </li>
-
             </ul>
           </nav>
         </header>

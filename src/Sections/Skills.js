@@ -1,9 +1,10 @@
 import React from "react";
 
 const Skills = () => (
+  <div className="body">
   <div className="skills">
-    <h2 style={{ textAlign: "center" }}>Skills</h2>
-    <div class="contentStyle"  >
+    <h2 className="heading" style={{ textAlign: "center" }}>Skills</h2>
+    <div className="contentStyle"  >
     <ul className="skills-list">
       <li className="skills-list-item">
         <span className="skills-list-title">Programming Languages</span>: Java,
@@ -15,7 +16,7 @@ const Skills = () => (
       </li>
       <li className="skills-list-item">
         <span className="skills-list-title">API Development and Testing</span>:
-        REST APIs, Dialogflow, Swagger, Postman, GraphQL
+        REST APIs, Dialogflow, Swagger, Postman
       </li>
       <li className="skills-list-item">
         <span className="skills-list-title">Industry Knowledge</span>: Design
@@ -33,6 +34,6 @@ const Skills = () => (
       </li>
     </ul>
     </div>
-  </div>
+  </div></div>
 );
 export default Skills;

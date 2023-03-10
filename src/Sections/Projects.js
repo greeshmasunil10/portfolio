@@ -1,15 +1,15 @@
 import React from "react";
-import winterlyImg from "./winterly.jpg";
-import holyGuidanceImg from "./holyguidance.jpg";
-import lottoMaxImg from "./lottomax.jpg";
-import ProjectCard from "./Layouts/ProjectCard";
+import winterlyImg from "../Images/winterly.jpg";
+import holyGuidanceImg from "../Images/holyguidance.jpg";
+import lottoMaxImg from "../Images/lottomax.jpg";
+import ProjectCard from "../Layouts/ProjectCard";
 
 function Projects() {
   return (
-    <div class="body">
-      <h2>Projects</h2>
-      <div class="contentStyle">
-        <div class="content">
+    <div className="body">
+      <h2 className="heading">Projects</h2>
+      <div className="contentStyle">
+        <div className="content">
           <ProjectCard
             projectName="Holy Guidance"
             technologiesUsed="Python, Flask, React, OpenAI"

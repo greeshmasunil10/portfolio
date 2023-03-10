@@ -3,6 +3,68 @@
   --neon-green: #00e297;
   --font-body-light: #97a0bc;
   --font-body-dark: #808594;
+  --nav-bar-color:rgb(0, 0, 0);
+}
+
+
+/* For small screens (up to 576px) */
+@media (max-width: 576px) {
+  .app-img {
+    width: 100%;
+    height: auto;
+  }
+  .app-label {
+    opacity: 0;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .img-url-label {
+    opacity: 1;
+    color: #787fe8;
+    text-decoration-line: underline;
+  }
+  .header {
+    opacity: 0;
+  }
+
+  /* .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    height: 20px;
+  }
+  
+  .header__nav li {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    height: 20px;
+    padding: 10px;
+  }
+  
+  .header__nav li:last-child {
+    margin-bottom: 0;
+  } */
+  
+  
+}
+
+/* For medium screens (between 576px and 992px) */
+@media (min-width: 576px) and (max-width: 992px) {
+  .app-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* For large screens (above 992px) */
+@media (min-width: 992px) {
+  .app-img {
+    width: 70%;
+    height: auto;
+  }
 }
 
 body {
@@ -14,40 +76,44 @@ body {
 
 .section {
   min-height: 100vh;
-  display: flex;
+  /* min-width:100vw; */
+  display: flex; /* add display:flex to make each section a flexbox */
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid rgba(8, 218, 15, 0.1);
+  box-shadow: 0 5px 15px rgba(56, 52, 52, 0.3);
+  box-sizing:content-box;
 }
 
 .scroll-to-top-button {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 99;
   font-size: 16px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #1c1c1c;
-  color: white;
+  background-color: rgb(43, 61, 47);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
 
 .scroll-to-top-button:hover {
   opacity: 0.8;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-.back-to-top__image {
-  color: rgb(255, 255, 255);
+.back-to-top {
+  color: var(--neon-green);
   font-size: 1.1rem;
 }
 
 .header {
-  background-color: #060606;
+  background-color: var(--nav-bar-color);
   color: #0a192f;
   display: flex;
   justify-content: left;
@@ -58,12 +124,17 @@ body {
   width: 100%;
   z-index: 999;
   padding-left: 75px;
+  border: 1px solid rgba(8, 218, 15, 0.1);
+  box-shadow: 0 5px 15px rgba(56, 52, 52, 0.3);
+  box-sizing:content-box;
+  width: 100vw;;
 }
 
 .header__nav {
   display: flex;
-  list-style: none;
-  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .header__nav li {
@@ -72,7 +143,7 @@ body {
 }
 
 .header__nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -80,61 +151,42 @@ body {
   cursor: pointer;
 }
 
-section {
-  max-width: 100vb;
-  margin: 20px auto;
-  padding: 20px;
-  /* font-size: 20px; */
-  background-color: var(--bgm-color);
-  box-shadow: 0 2px 4px rgba(176, 32, 32, 0.1);
-}
-
 div.body {
   max-width: 120vb;
   margin: 20px auto;
   padding: 20px;
   font-size: 20px;
-  /* font-family:'Courier New', Courier, monospace; */
 }
 
 div.content {
   max-width: 1000px;
   margin: 0px auto;
   padding: 20px;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 500;
-  color: var(--font-body-light);
+  color: var(--font-body-dark);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-div.courier {
+.courier {
   color: var(--neon-green);
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   /* font-size: 20px; */
 }
 
-h3 {
-  color: #a8b2d1;
-  font-size: 75px;
+p.courier{
+  font-size: 20px;
+}
+
+.heading {
+  color: var(--font-body-light);
+  font-size: 3.5rem;
   margin-top: 10px;
   margin-bottom: 1px;
 }
 
-h2 {
-  color: #a8b2d1;
-  font-size: 75px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  color: #a8b2d1;
-  font-size: 75px;
-  margin-top: 10px;
-  margin-bottom: 1px;
-}
-
-h2.dark {
+.dark {
   color: var(--font-body-dark);
   font-size: 55px;
   margin: 0;
@@ -164,60 +216,10 @@ ul {
 }
 
 .btn:hover {
-  background-color: #73deb0;
-  color: #333;
+  background-color: #46866a;
+  color: black;
 }
 
-.contentStyle {
-  /* padding: 1rem; */
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.contentStyle h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: var(--font-body-light);
-}
-
-.contentStyle li {
-  margin-bottom: 2rem;
-  color: var(--font-body-light);
-}
-
-.contentStyle h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.contentStyle p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  font-family: "Courier New", Courier, monospace;
-  color: var(--neon-green);
-  font-size: 20px;
-}
-
-.contentStyle ul {
-  padding-left: 2rem;
-}
-
-.contentStyle ul li ul li {
-  color: (var(--font-body-light));
-  list-style: circle;
-}
 
 .skills {
   padding: 3rem;
@@ -263,47 +265,12 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .jumbotron h2 {
     margin-top: 10px;
   }
-}
+} */
 
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 .app-img {
   width: 100%;
@@ -350,37 +317,3 @@ a {
   opacity: 0;
 }
 
-/* For small screens (up to 576px) */
-@media (max-width: 576px) {
-  .app-img {
-    width: 100%;
-    height: auto;
-  }
-  .app-label {
-    opacity: 0;
-    padding: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .img-url-label {
-    opacity: 1;
-    color: #787fe8;
-    text-decoration-line: underline;
-  }
-}
-
-/* For medium screens (between 576px and 992px) */
-@media (min-width: 576px) and (max-width: 992px) {
-  .app-img {
-    width: 80%;
-    height: auto;
-  }
-}
-
-/* For large screens (above 992px) */
-@media (min-width: 992px) {
-  .app-img {
-    width: 70%;
-    height: auto;
-  }
-}
