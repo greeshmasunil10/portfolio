@@ -7,6 +7,7 @@ import Experience from "./Sections/Experience";
 import Intro from "./Sections/Intro";
 import ScrollToTopButton from "./Helpers/ScrollToTopButton";
 import AnimatedCursor from "react-animated-cursor";
+import ContactMe from "./Sections/ContactMe";
 
 const Home = () => {
   const handleScrollTop = () => {
@@ -32,6 +33,9 @@ const Home = () => {
       </div>
       <div id="skills-section" className="section">
         <Skills />
+      </div>
+      <div id="contact-me-section" className="">
+        <ContactMe />
       </div>
 
       <ScrollToTopButton handleScrollTop={handleScrollTop} />

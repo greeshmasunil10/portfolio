@@ -12,6 +12,7 @@ import ContactMe from "./Sections/ContactMe";
 import gsIcon from "./Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -101,6 +102,9 @@ const App = () => {
           <Route exact path="/ContactMe" element={<ContactMe />} />
         </Routes>
       </div>
+      <footer><div>
+            <p>&copy; 2023 greeshmasunil. All rights reserved.</p>
+          </div></footer>
     </BrowserRouter>
   );
 };
