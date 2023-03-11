@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import ScrollToSectionButton from "../Helpers/ScrollToSectionButton";
 import { TypeAnimation } from "react-type-animation";
 

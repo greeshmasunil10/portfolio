@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faStar } from "@fortawesome/free-regular-svg-icons";
-import { Tab } from "react-bootstrap";
 
 const ContactMe = () => {
   return (
@@ -13,13 +12,6 @@ const ContactMe = () => {
         <div>
           <div className="social-icons">
             <a
-              href="https://github.com/greeshmasunil10"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a
               href="https://www.linkedin.com/in/greeshma-sunil/"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,8 +21,15 @@ const ContactMe = () => {
             <a href="mailto:snlgreeshma@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
+            <a
+              href="https://github.com/greeshmasunil10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </div>
-          
+
           {/* <div className="section" style={{ maxHeight: "10px" }}>
             <a
               href="https://github.com/greeshmasunil10/portfolio"
