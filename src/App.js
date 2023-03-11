@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./Styles/App.css";
 import "./Styles/Animations.css";
+import "./Styles/Bulb.css";
 import Home from "./Home";
 import Experience from "./Sections/Experience";
 import Skills from "./Sections/Skills";
@@ -91,7 +92,7 @@ const App = () => {
             </ul>
           </nav>
         </header>
-
+        
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Experience" element={<Experience />} />

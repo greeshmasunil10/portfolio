@@ -14,17 +14,19 @@ const Intro = () => {
             <TypeAnimation
               sequence={[
                 "Software Engineer",
-                1000,
-                "Problem Solver",
                 2000,
-                "Creative coder",
+                "Full-Stack Developer",
+                2000,
+                "Solution Architect",
+                2000,
+                "Agile Coder",
+                2000,
+                "Technical Consultant",
                 2000,
                 () => {},
               ]}
               cursor={true}
               repeat={Infinity}
-              // style={{fontSize:"40px"}}
-              
             />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import AboutMe from "./Sections/AboutMe";
 import Projects from "./Sections/Projects";
 import Education from "./Sections/Education";
@@ -8,6 +8,30 @@ import Intro from "./Sections/Intro";
 import ScrollToTopButton from "./Helpers/ScrollToTopButton";
 import AnimatedCursor from "react-animated-cursor";
 import ContactMe from "./Sections/ContactMe";
+import "./Styles/App.css";
+
+class Switch extends React.Component {
+  render() {
+    var switchClass = this.props.isOn ? "cube-switch active" : "cube-switch";
+    return (
+      <div className={switchClass}>
+        <span className="switch" onClick={this.props.onSwitched}>
+          <span className="switch-state off">OFF</span>
+          <span className="switch-state on">ON</span>
+        </span>
+      </div>
+    );
+  }
+}
+
+class Bulb extends React.Component {
+  render() {
+    let lightClass = this.props.isOn ? "light-bulb on" : "light-bulb off";
+    return (
+      <div className={lightClass}></div>
+    )
+  }
+}
 
 const Home = () => {
   const handleScrollTop = () => {
@@ -17,9 +41,17 @@ const Home = () => {
     });
   };
 
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  const handleToggleMode = () => {
+    setIsLightMode(!isLightMode);
+  };
+
   return (
-    <div>
+    <main className={isLightMode ? "light" : ""}>
       <div id="home-section" className="section">
+        <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
+        <Bulb isOn={isLightMode} />
         <Intro />
       </div>
       <div id="about-me-section" className="section">
@@ -40,7 +72,8 @@ const Home = () => {
 
       <ScrollToTopButton handleScrollTop={handleScrollTop} />
       <AnimatedCursor
-        color="0, 226, 151"
+        className="my-cursor"
+        color="var(--cursor-color)"
         innerSize={8}
         outerSize={25}
         outerAlpha={0.2}
@@ -49,7 +82,7 @@ const Home = () => {
         trailingSpeed={8}
         trailingDelay={0}
       />
-    </div>
+    </main>
   );
 };
 
