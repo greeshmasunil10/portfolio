@@ -33,7 +33,7 @@ function ProjectCard(props) {
 
 ProjectCard.defaultProps = {
     liveAppLink: "https://github.com/greeshmasunil10", 
-    appURLText: "Launch App", 
+    appURLText: "Demo", 
   };
 
 export default ProjectCard;
