@@ -5,32 +5,33 @@
   --font-body-dark: #a8afc2;
   --nav-bar-color: rgb(0, 0, 0);
   --content-size: 1rem;
-  --footer-color: #000000;
-  --bg-grad-1: #051b10 !important;
-  --bg-grad-2: #1a2750 !important;
-  --bg-grad-3: #1f1a0a !important;
-  --bg-grad-4: #140326 !important;
+  --footer-color: #011409;
+  --bg-grad-1: #000000 !important;
+  --bg-grad-2: #051b10 !important;
+  --bg-grad-3: #000000 !important;
+  --bg-grad-4: #070f19 !important;
   --bg-grad-5: #000000 !important;
   --cursor-color:0, 226, 151;
   --button-color:#00e297;
+  --social-button-color:#103d20;
 }
 
 .light {
   --bgm-color: #ecf2f9 !important;
-  --neon-green: #b80c0c !important;
+  --neon-green: rgb(196, 0, 0) !important;
   --font-body-light: #000000 !important;
   --font-body-dark: #010101 !important;
   --nav-bar-color: rgb(255, 255, 255) !important;
   --content-size: 1rem !important;
   --footer-color: #ffffff !important;
   --bg-grad-1: #d7f0e4 !important;
-  --bg-grad-2: #ccc5dd !important;
-  --bg-grad-3: #c9ccab !important;
-  --bg-grad-4: #bbdbdf !important;
-  --bg-grad-5: #a2dcca !important;
+  --bg-grad-2: #ffffff !important;
+  --bg-grad-3: #f1f1e3 !important;
+  --bg-grad-4: #ffffff !important;
+  --bg-grad-5: #b8d8ce !important;
   --cursor-color:0, 0, 0;
   --button-color:#fff6f6;
-  
+  --social-button-color:#000000
 }
 
 body{
@@ -327,12 +328,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #555;
+  width: 55px;
+  height: 55px;
+  background-color: var(--social-button-color);
   border-radius: 50%;
   margin-right: 10px;
   transition: all 0.3s ease;
+  font-size: 35px;
 }
 
 .social-icons a:hover {
@@ -351,6 +353,7 @@ footer {
   text-align: center;
   font-size: small;
   font-family: "Courier New", Courier, monospace;
+  color: white
   /* padding: 20px; */
 }
 
