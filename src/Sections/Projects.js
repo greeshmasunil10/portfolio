@@ -3,6 +3,9 @@ import winterlyImg from "../Images/winterly.jpg";
 import holyGuidanceImg from "../Images/holyguidance.jpg";
 import lottoMaxImg from "../Images/lottomax.jpg";
 import ProjectCard from "../Layouts/ProjectCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileArchive, faFileClipboard } from "@fortawesome/free-regular-svg-icons";
+
 
 function Projects() {
   return (
@@ -68,8 +71,8 @@ function Projects() {
 
           <br />
 
-          <p style={{fontSize:"25px"}}>
-            More projects on{" "}
+          <p style={{fontSize:"25px", fontWeight:"bold"}}>
+          <FontAwesomeIcon icon={faFileClipboard} />  More projects on{" "}
             <a href="https://github.com/greeshmasunil10" target="_blank" style={{display:"inline-block", textDecoration:"underline"}}>
               Github
             </a>

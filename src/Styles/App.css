@@ -7,11 +7,11 @@
   --content-size: 1rem;
   --footer-color: #011409;
   --bg-grad-1: #000000 !important;
-  --bg-grad-2: #051b10 !important;
+  --bg-grad-2: #04160d !important;
   --bg-grad-3: #000000 !important;
   --bg-grad-4: #070f19 !important;
   --bg-grad-5: #000000 !important;
-  --cursor-color:0, 226, 151;
+  --cursor-color:0, 300, 0;
   --button-color:#00e297;
   --social-button-color:#103d20;
 }
@@ -32,6 +32,11 @@
   --cursor-color:0, 0, 0;
   --button-color:#fff6f6;
   --social-button-color:#000000
+}
+
+.light .courier {
+  /* font-weight: bold; */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body{
@@ -62,9 +67,11 @@ main {
   align-items: center;
   flex-direction: column;
   border: 1px solid rgba(8, 218, 15, 0.1);
-  box-shadow: 0 5px 15px rgba(56, 52, 52, 0.3);
+  box-shadow: 0 5px 15px rgba(108, 97, 97, 0.3);
   box-sizing: content-box;
 }
+
+
 
 .my-cursor {
   border-color: "0, 226, 151"
@@ -164,7 +171,7 @@ div.content {
   max-width: 1000px;
   margin: 0px auto;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--font-body-dark);
   font-family: Arial, Helvetica, sans-serif;
@@ -174,11 +181,6 @@ div.content {
   color: var(--neon-green);
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
-  /* font-size: 20px; */
-}
-
-p.courier {
-  font-size: 20px;
 }
 
 .heading {
@@ -186,6 +188,7 @@ p.courier {
   font-size: 3.5rem;
   margin-top: 10px;
   margin-bottom: 1px;
+  font-weight: bold;
 }
 
 .dark {

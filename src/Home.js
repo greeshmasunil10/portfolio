@@ -63,9 +63,6 @@ const Home = () => {
       <div id="education-section" className="section">
         <Education />
       </div>
-      <div id="skills-section" className="section">
-        <Skills />
-      </div>
       <div id="contact-me-section" className="">
         <ContactMe />
       </div>
@@ -75,7 +72,7 @@ const Home = () => {
         className="my-cursor"
         color="var(--cursor-color)"
         innerSize={8}
-        outerSize={25}
+        outerSize={40}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
