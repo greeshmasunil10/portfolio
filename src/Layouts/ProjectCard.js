@@ -24,7 +24,7 @@ function ProjectCard(props) {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={props.imageSrc} class="app-img" alt="Project Image" />
+          <img src={props.imageSrc} class="app-img" alt="demo" />
           <span
             className="app-label"
             style={{ opacity: `${props.imageLabelOpacity}` }}
@@ -36,6 +36,7 @@ function ProjectCard(props) {
           className="img-url-label"
           href="https://winter-ly.herokuapp.com"
           target="_blank"
+          rel="noreferrer" 
         >
           {props.appURLText}
         </a>
