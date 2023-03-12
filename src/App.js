@@ -12,6 +12,8 @@ import Projects from "./Sections/Projects";
 import ContactMe from "./Sections/ContactMe";
 import gsIcon from "./Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faStar } from "@fortawesome/free-regular-svg-icons";
 
 const App = () => {
   
@@ -94,7 +96,9 @@ const App = () => {
       </div>
       <footer>
         <div>
-          <p>&copy; 2023 greeshmasunil. All rights reserved.</p>
+          <a  href="https://github.com/greeshmasunil10/portfolio"
+              target="_blank"
+              style={{ display: "inline-block", padding:"10px"}}> <FontAwesomeIcon icon={faStar} /> Designed and Built by Greeshma Sunil </a>
         </div>
       </footer>
     </BrowserRouter>
