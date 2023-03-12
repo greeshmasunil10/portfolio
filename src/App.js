@@ -1,19 +1,13 @@
-import React, { useRef } from "react";
+import React  from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./Styles/App.css";
 import "./Styles/Animations.css";
 import "./Styles/Bulb.css";
 import Home from "./Home";
-import Experience from "./Sections/Experience";
-import Skills from "./Sections/Skills";
-import Education from "./Sections/Education";
-import AboutMe from "./Sections/AboutMe";
-import Projects from "./Sections/Projects";
-import ContactMe from "./Sections/ContactMe";
 import gsIcon from "./Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faStar } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
 
 const App = () => {
   

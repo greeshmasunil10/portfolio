@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import AboutMe from "./Sections/AboutMe";
 import Projects from "./Sections/Projects";
 import Education from "./Sections/Education";
-import Skills from "./Sections/Skills";
-import Experience from "./Sections/Experience";
 import Intro from "./Sections/Intro";
 import ScrollToTopButton from "./Helpers/ScrollToTopButton";
 import AnimatedCursor from "react-animated-cursor";

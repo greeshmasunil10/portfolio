@@ -5,7 +5,6 @@ import lottoMaxImg from "../Images/lottomax.jpg";
 import ProjectCard from "../Layouts/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFileArchive,
   faFileClipboard,
 } from "@fortawesome/free-regular-svg-icons";
 
@@ -69,7 +68,8 @@ function Projects() {
             <FontAwesomeIcon icon={faFileClipboard} /> More projects on{" "}
             <a
               href="https://github.com/greeshmasunil10"
-              target="_blank"
+              target="_blank" 
+              rel="noreferrer"
               style={{ display: "inline-block", textDecoration: "underline" }}
             >
               Github

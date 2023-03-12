@@ -22,8 +22,9 @@ function ProjectCard(props) {
           href={props.liveAppLink}
           style={{ position: "relative" }}
           target="_blank"
+          rel="noreferrer"
         >
-          <img src={props.imageSrc} class="app-img" />
+          <img src={props.imageSrc} class="app-img" alt="Project Image" />
           <span
             className="app-label"
             style={{ opacity: `${props.imageLabelOpacity}` }}
@@ -38,7 +39,10 @@ function ProjectCard(props) {
         >
           {props.appURLText}
         </a>
-        <div dangerouslySetInnerHTML={{ __html: props.projectDescription }}></div>      </div>
+        <div
+          dangerouslySetInnerHTML={{ __html: props.projectDescription }}
+        ></div>{" "}
+      </div>
     </div>
   );
 }

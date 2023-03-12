@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import ScrollToSectionButton from "../Helpers/ScrollToSectionButton";
 import { TypeAnimation } from "react-type-animation";
 
