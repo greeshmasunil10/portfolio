@@ -2,7 +2,7 @@ import React from "react";
 import gsIcon from "../Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
 
-const AboutMe = () => {
+const NavBar = () => {
   return (
     <nav>
             <ul className="header__nav">
@@ -68,4 +68,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default NavBar;
