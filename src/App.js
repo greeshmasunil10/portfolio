@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./Styles/App.css";
 import "./Styles/Animations.css";
@@ -12,9 +12,26 @@ import Projects from "./Sections/Projects";
 import ContactMe from "./Sections/ContactMe";
 import gsIcon from "./Images/GS.ico";
 import { Link as ScrollLink } from "react-scroll";
+import { Canvas, useFrame } from "react-three-fiber";
+
 
 
 const App = () => {
+  const LoadingAnimation = () => {
+    const meshRef = useRef();
+  
+    useFrame(() => {
+      meshRef.current.rotation.x += 0.01;
+      meshRef.current.rotation.y += 0.01;
+    });
+  
+    return (
+      <mesh ref={meshRef}>
+        <boxBufferGeometry args={[1, 1, 1]} />
+        <meshStandardMaterial color={"#f0f0f0"} />
+      </mesh>
+    );
+  };
   return (
     <BrowserRouter>
       <div className="App">
@@ -92,6 +109,10 @@ const App = () => {
             </ul>
           </nav>
         </header>
+
+        <Canvas>
+          <LoadingAnimation />
+        </Canvas>
         
         <Routes>
           <Route exact path="/" element={<Home />} />
