@@ -37,7 +37,7 @@ const App = () => {
             </header>
             <Home />
           </div>
-<Footer/>
+          <Footer />
         </Suspense>
       )}
     </div>

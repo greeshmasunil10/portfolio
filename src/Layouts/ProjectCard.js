@@ -24,7 +24,7 @@ function ProjectCard(props) {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={props.imageSrc} class="app-img" alt="demo" />
+          <img src={props.imageSrc} class="app-img"/>
           <span
             className="app-label"
             style={{ opacity: `${props.imageLabelOpacity}` }}
