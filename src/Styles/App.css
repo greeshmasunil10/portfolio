@@ -44,6 +44,15 @@ body {
   background-color: black;
 }
 
+.lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 main {
   margin-top: 70px;
   font-family: "Open Sans", sans-serif;

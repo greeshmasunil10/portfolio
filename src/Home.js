@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-import AboutMe from "./Sections/AboutMe";
-import Projects from "./Sections/Projects";
-import Education from "./Sections/Education";
-import Intro from "./Sections/Intro";
-import ScrollToTopButton from "./Helpers/ScrollToTopButton";
-import AnimatedCursor from "react-animated-cursor";
-import ContactMe from "./Sections/ContactMe";
-import "./Styles/App.css";
+import React, { useState, lazy, Suspense } from "react";
+
+
+const AboutMe = lazy(() => import("./Components/AboutMe"));
+const Projects = lazy(() => import("./Components/Projects"));
+const Education = lazy(() => import("./Components/Education"));
+const Intro = lazy(() => import("./Components/Intro"));
+const ScrollToTopButton = lazy(() => import("./Helpers/ScrollToTopButton"));
+const AnimatedCursor = lazy(() => import("react-animated-cursor"));
+const ContactMe = lazy(() => import("./Components/ContactMe"));
+
+
 
 class Switch extends React.Component {
   render() {
@@ -45,7 +48,9 @@ const Home = () => {
     setIsLightMode(!isLightMode);
   };
 
+
   return (
+         
     <main className={isLightMode ? "light" : ""}>
       <div id="home-section" className="section">
         <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
@@ -78,6 +83,8 @@ const Home = () => {
         trailingDelay={0}
       />
     </main>
+
+
   );
 };
 
