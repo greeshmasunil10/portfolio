@@ -2,10 +2,17 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className="section" style={{ padding: "30px" , minHeight:"fit-content",backgroundColor:"var(--bg-grad-1)"}}>
+    <div
+      className="section"
+      style={{
+        padding: "30px",
+        minHeight: "fit-content",
+        backgroundColor: "var(--bg-grad-1)",
+      }}
+    >
       <div>
         {" "}
-        <div className="courier" style={{ fontSize: 30, padding:"20px" }}>
+        <div className="courier" style={{ fontSize: 30, padding: "20px" }}>
           {props.projectName}
         </div>
         <strong>Technologies used:</strong> {props.technologiesUsed}
@@ -31,8 +38,7 @@ function ProjectCard(props) {
         >
           {props.appURLText}
         </a>
-        <strong>Description:</strong> {props.projectDescription}
-      </div>
+        <div dangerouslySetInnerHTML={{ __html: props.projectDescription }}></div>      </div>
     </div>
   );
 }

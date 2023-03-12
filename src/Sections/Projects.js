@@ -20,14 +20,13 @@ function Projects() {
             technologiesUsed="Python, Flask, React, OpenAI"
             liveAppLink="http://holy-guidance-fe.herokuapp.com/"
             imageSrc={holyGuidanceImg}
-            projectDescription="Holy Guidance is an app that provides
-            Bible-based advice and verses for your personal struggles. Using
-            OpenAI's powerful language processing capabilities, Holy Guidance
-            analyzes your input and generates meaningful responses that are
-            rooted in biblical teachings. With Holy Guidance, you can be sure
-            that the advice and guidance you receive are not only personalized,
-            but also rooted in the timeless wisdom of the Bible. Try it out
-            today and see how it can help you navigate life's challenges."
+            projectDescription="<strong>Holy Guidance</strong> is a unique app that offers <strong>Bible-based
+            advice</strong> and verses to help you deal with personal struggles. The app leverages
+            <strong>OpenAI's</strong> powerful language processing capabilities to analyze your input and
+            generate <strong>personalized responses</strong> that are rooted in biblical teachings. With Holy Guidance,
+            you can receive <strong>meaningful guidance</strong> that is not only personalized but also aligned with the
+            timeless wisdom of the Bible. Give it a try today and discover how it can help you <strong>navigate life's
+            challenges</strong> with confidence."
           />
 
           <br />
@@ -38,8 +37,8 @@ function Projects() {
             liveAppLink="https://winter-ly.herokuapp.com"
             imageSrc={winterlyImg}
             altText="View Live App"
-            projectDescription="A fully functional e-commerce website deployed on Heroku cloud servers for production. 
-            Built using React and Bootstrap 4 for the frontend and integrated with Braintree for credit card and PayPal payments. Additionally, the backend of the platform is implemented using REST API with Node.js and Express, and the database is handled using MongoDB"
+            projectDescription="<strong>Winterly</strong> is a fully functional e-commerce website that utilizes <strong>REST API</strong> with <strong>Node.js</strong> and <strong>Express</strong> for the backend, and <strong>MongoDB</strong> for the database. The frontend is built using <strong>React</strong> and <strong>Bootstrap</strong>, and it is integrated with <strong>Braintree</strong> to facilitate payments via credit card and PayPal.
+            "
           />
           <br />
 
@@ -49,12 +48,7 @@ function Projects() {
             BeautifulSoup, numpy, matplotlib"
             liveAppLink="https://lottomax-analyser-fe.herokuapp.com/"
             imageSrc={lottoMaxImg}
-            projectDescription="A tool for analyzing the results of
-            the Canadian Lotto Max lottery, consisting of a data scraper that
-            extracts the winning numbers and an analysis script that performs
-            basic statistical analysis on the numbers. The frontend is built
-            using React and the backend is built using Python with Flask as the
-            web framework."
+            projectDescription="<strong>Lotto Max Analyzer</strong> is a powerful tool for analyzing the results of the Canadian Lotto Max lottery. It includes a <strong>data scraper</strong> that extracts the winning numbers and an <strong>analysis script</strong> that performs basic statistical analysis on the numbers. The frontend is built using <strong>React</strong>, while the backend is built using <strong>Python</strong> with <strong>Flask</strong> as the web framework. With Lotto Max Analyzer, you can gain valuable insights into the lottery."
           />
 
           <br />
@@ -64,10 +58,7 @@ function Projects() {
             technologiesUsed="Java, Swing, JUnit, Design
             Patterns, Multithreading, Git"
             liveAppLink="https://github.com/greeshmasunil10"
-            projectDescription="A strategy board game based on Java,
-            utilizing design patterns such as MVC and Observer pattern for loose
-            coupling between objects and Strategy pattern for implementing bot
-            players."
+            projectDescription="<strong>Java-based strategy board game</strong> designed with key <strong>software development principles</strong> in mind. It utilizes the <strong>MVC</strong> and <strong>Observer patterns</strong> to promote loose coupling between objects, and the <strong>Strategy pattern</strong> to implement intelligent bot players. This approach ensures that the game is <strong>flexible</strong>, <strong>maintainable</strong>, and <strong>scalable</strong>."
             appURLText="View on Github"
             imageLabelOpacity="1"
           />
