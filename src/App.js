@@ -95,17 +95,6 @@ const App = () => {
                   Education
                 </ScrollLink>
               </li>
-              <li>
-                <ScrollLink
-                  to="skills-section"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-60}
-                >
-                  Skills
-                </ScrollLink>
-              </li>
             </ul>
           </nav>
         </header>
@@ -116,12 +105,12 @@ const App = () => {
         
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/Experience" element={<Experience />} />
+          {/* <Route exact path="/Experience" element={<Experience />} />
           <Route exact path="/Skills" element={<Skills />} />
           <Route exact path="/Education" element={<Education />} />
           <Route exact path="/AboutMe" element={<AboutMe />} />
           <Route exact path="/MyWork" element={<Projects />} />
-          <Route exact path="/ContactMe" element={<ContactMe />} />
+          <Route exact path="/ContactMe" element={<ContactMe />} /> */}
         </Routes>
       </div>
       <footer><div>
