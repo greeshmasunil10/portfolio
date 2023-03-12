@@ -1,5 +1,5 @@
 import React  from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./Styles/App.css";
 import "./Styles/Animations.css";
 import "./Styles/Bulb.css";
