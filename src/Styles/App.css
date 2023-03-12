@@ -11,9 +11,9 @@
   --bg-grad-3: #000000 !important;
   --bg-grad-4: #070f19 !important;
   --bg-grad-5: #000000 !important;
-  --cursor-color:0, 300, 0;
-  --button-color:#00e297;
-  --social-button-color:#103d20;
+  --cursor-color: 0, 300, 0;
+  --button-color: #00e297;
+  --social-button-color: #103d20;
 }
 
 .light {
@@ -29,19 +29,18 @@
   --bg-grad-3: #f1f1e3 !important;
   --bg-grad-4: #ffffff !important;
   --bg-grad-5: #b8d8ce !important;
-  --cursor-color:0, 0, 0;
-  --button-color:#fff6f6;
-  --social-button-color:#000000
+  --cursor-color: 0, 0, 0;
+  --button-color: #fff6f6;
+  --social-button-color: #000000;
 }
-
-
 
 .light .courier {
   /* font-weight: bold; */
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
   background-color: black;
 }
 
@@ -49,7 +48,7 @@ main {
   margin-top: 70px;
   font-family: "Open Sans", sans-serif;
   background-image: linear-gradient(
-    to bottom,  
+    to bottom,
     var(--bg-grad-1),
     var(--bg-grad-2),
     var(--bg-grad-3),
@@ -73,16 +72,8 @@ main {
   box-sizing: content-box;
 }
 
-canvas {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 200px;
-}
-
 .my-cursor {
-  border-color: "0, 226, 151"
+  border-color: "0, 226, 151";
 }
 
 .intro {
@@ -364,11 +355,9 @@ footer {
   text-align: center;
   font-size: small;
   font-family: "Courier New", Courier, monospace;
-  color: white
+  color: white;
   /* padding: 20px; */
 }
-
-
 
 /* For small screens (up to 576px) */
 @media (max-width: 576px) {
@@ -418,7 +407,6 @@ footer {
     /* max-width: 40px; */
     padding: 0 0px;
   }
-
 }
 
 /* For medium screens (between 576px and 992px) */

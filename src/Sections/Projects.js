@@ -4,8 +4,10 @@ import holyGuidanceImg from "../Images/holyguidance.jpg";
 import lottoMaxImg from "../Images/lottomax.jpg";
 import ProjectCard from "../Layouts/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileArchive, faFileClipboard } from "@fortawesome/free-regular-svg-icons";
-
+import {
+  faFileArchive,
+  faFileClipboard,
+} from "@fortawesome/free-regular-svg-icons";
 
 function Projects() {
   return (
@@ -36,7 +38,8 @@ function Projects() {
             liveAppLink="https://winter-ly.herokuapp.com"
             imageSrc={winterlyImg}
             altText="View Live App"
-            projectDescription="A fully functional e-commerce platform deployed on Heroku cloud servers for production. The frontend is built using React and Bootstrap 4, and it is integrated with Braintree for credit card and PayPal payments."
+            projectDescription="A fully functional e-commerce website deployed on Heroku cloud servers for production. 
+            Built using React and Bootstrap 4 for the frontend and integrated with Braintree for credit card and PayPal payments. Additionally, the backend of the platform is implemented using REST API with Node.js and Express, and the database is handled using MongoDB"
           />
           <br />
 
@@ -71,9 +74,13 @@ function Projects() {
 
           <br />
 
-          <p style={{fontSize:"25px", fontWeight:"bold"}}>
-          <FontAwesomeIcon icon={faFileClipboard} />  More projects on{" "}
-            <a href="https://github.com/greeshmasunil10" target="_blank" style={{display:"inline-block", textDecoration:"underline"}}>
+          <p style={{ fontSize: "25px", fontWeight: "bold" }}>
+            <FontAwesomeIcon icon={faFileClipboard} /> More projects on{" "}
+            <a
+              href="https://github.com/greeshmasunil10"
+              target="_blank"
+              style={{ display: "inline-block", textDecoration: "underline" }}
+            >
               Github
             </a>
           </p>
