@@ -47,15 +47,17 @@ const Home = () => {
     } else {
       document.body.style.backgroundColor = "#d7f0e4";
     }
-  }
+  };
 
   return (
     <main className={isLightMode ? "light" : ""}>
       <div id="home-section" className="section">
-          <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
-          <Bulb isOn={isLightMode} />
+        <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
+        <Bulb isOn={isLightMode} />
 
-        <Intro />
+        {/* <div id="home-section" className="section" style={{padding:"30px", minHeight:"50vh"}}>   */}
+          <Intro />
+        {/* </div> */}
       </div>
       <div id="about-me-section" className="section">
         <AboutMe />
