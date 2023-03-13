@@ -10,6 +10,7 @@ import Animation from "./animation.json";
 
 const App = () => {
   const [showContent, setShowContent] = useState(false);
+  
 
   useEffect(() => {
     setTimeout(() => {

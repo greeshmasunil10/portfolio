@@ -1,5 +1,5 @@
 import React, { useState, lazy, Suspense } from "react";
-
+import { useSpring, animated } from "react-spring";
 
 const AboutMe = lazy(() => import("./Components/AboutMe"));
 const Projects = lazy(() => import("./Components/Projects"));
@@ -8,8 +8,6 @@ const Intro = lazy(() => import("./Components/Intro"));
 const ScrollToTopButton = lazy(() => import("./Helpers/ScrollToTopButton"));
 const AnimatedCursor = lazy(() => import("react-animated-cursor"));
 const ContactMe = lazy(() => import("./Components/ContactMe"));
-
-
 
 class Switch extends React.Component {
   render() {
@@ -28,9 +26,7 @@ class Switch extends React.Component {
 class Bulb extends React.Component {
   render() {
     let lightClass = this.props.isOn ? "light-bulb on" : "light-bulb off";
-    return (
-      <div className={lightClass}></div>
-    )
+    return <div className={lightClass}></div>;
   }
 }
 
@@ -46,15 +42,19 @@ const Home = () => {
 
   const handleToggleMode = () => {
     setIsLightMode(!isLightMode);
-  };
-
+    if (isLightMode) {
+      document.body.style.backgroundColor = "#000000";
+    } else {
+      document.body.style.backgroundColor = "#d7f0e4";
+    }
+  }
 
   return (
-         
     <main className={isLightMode ? "light" : ""}>
       <div id="home-section" className="section">
-        <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
-        <Bulb isOn={isLightMode} />
+          <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
+          <Bulb isOn={isLightMode} />
+
         <Intro />
       </div>
       <div id="about-me-section" className="section">
@@ -83,8 +83,6 @@ const Home = () => {
         trailingDelay={0}
       />
     </main>
-
-
   );
 };
 
