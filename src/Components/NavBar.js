@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav>
             <ul className="header__nav">
-              <li>
+              {/* <li>
                 <ScrollLink
                   to="home-section"
                   smooth={true}
@@ -28,7 +28,7 @@ const NavBar = () => {
                     }}
                   />
                 </ScrollLink>
-              </li>
+              </li> */}
               <li>
                 <ScrollLink
                   to="about-me-section"

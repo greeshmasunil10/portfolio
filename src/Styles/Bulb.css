@@ -1,110 +1,109 @@
 /* SWITCH */
 .cube-switch {
-    /* border-radius: 10px; */
-    /* border: 1px solid rgba(0, 0, 0, 0.4); */
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.6), inset 0 100px 50px rgba(255, 255, 255, 0.1); */
-    /* Prevents clics on the back */
-    cursor: default;
-    float: right;
-    position: relative;
-    vertical-align: top;
-    overflow: hidden;
-    /* Prevents clics on the back */
-    pointer-events: none;
-    /* padding: 20px; */
-    margin-top: 10px;
-    /* background: #011c01; */
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    padding-right: 30px;
-    /* padding-right: 10px; */
-  }
-  
-  /* The switch */
-  .cube-switch .switch {
-    border: 1px solid rgba(253, 253, 253, 0.6);
-    border-radius: 0.7em;
-    box-shadow: inset 0 1px 0 rgba(249, 237, 237, 0.3), inset 0 -7px 0 rgba(0, 0, 0, 0.2), inset 0 50px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
-    display: block;
-    width: 60px;
-    height: 60px;
-    position: relative;
-    background: #268643;
-    transition: all 0.2s ease-out;
-    /* Allows click */
-    cursor: pointer;
-    pointer-events: auto;
-  }
-  
-  /* SWITCH Active State */
-  .cube-switch.active .switch {
-    background: #d1c75e;
-    box-shadow: inset 0 6px 0 rgba(255, 255, 255, 0.1), inset 0 7px 0 rgba(0, 0, 0, 0.2), inset 0 -50px 10px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(205, 205, 205, 0.1);
-  }
-  
-  .cube-switch.active:after,
-  .cube-switch.active:before {
-    background: #fff2f2;
-    box-shadow: 0 1px 0 rgba(225, 122, 122, 0.1), inset 1px 2px 1px rgba(0, 0, 0, 0.5), inset 3px 6px 2px rgba(200, 200, 200, 0.1), inset -1px -2px 1px rgba(0, 0, 0, 0.3);
-  }
-  
-  .cube-switch.active .switch:after,
-  .cube-switch.active .switch:before {
-    background: #dfc9c9;
-    border: none;
-    margin-top: 0;
-    height: 1px;
-  }
-  
-  .cube-switch .switch-state {
-    display: block;
-    position: absolute;
-    left: 40%;
-    color: #000000;
-    font-size: .5em;
-    text-align: center;
-  }
-  
-  .cube-switch .switch-state.on {
-    bottom: 15%;
-    font-weight: bold;
-    font-size: 10px;
-  }
-  
-  .cube-switch .switch-state.off {
-    top: 15%;
-    font-weight: bold;
-    font-size: 10px;
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(0, 0, 0, 0.4); */
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.6), inset 0 100px 50px rgba(255, 255, 255, 0.1); */
+  /* Prevents clics on the back */
+  cursor: default;
+  float: right;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  /* Prevents clics on the back */
+  pointer-events: none;
+  /* padding: 20px; */
+  margin-top: 10px;
+  /* background: #011c01; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  padding-right: 30px;
+  /* padding-right: 10px; */
+}
 
-  }
-  
+/* The switch */
+.cube-switch .switch {
+  border: 1px solid rgba(253, 253, 253, 0.6);
+  border-radius: 0.7em;
+  box-shadow: inset 0 1px 0 rgba(249, 237, 237, 0.3), inset 0 -7px 0 rgba(0, 0, 0, 0.2), inset 0 50px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background: #268643;
+  transition: all 0.2s ease-out;
+  /* Allows click */
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* SWITCH Active State */
+.cube-switch.active .switch {
+  background: #c5aecd;
+  box-shadow: inset 0 6px 0 rgba(255, 255, 255, 0.1), inset 0 7px 0 rgba(0, 0, 0, 0.2), inset 0 -50px 10px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(205, 205, 205, 0.1);
+}
+
+.cube-switch.active:after,
+.cube-switch.active:before {
+  background: #fff2f2;
+  box-shadow: 0 1px 0 rgba(225, 122, 122, 0.1), inset 1px 2px 1px rgba(0, 0, 0, 0.5), inset 3px 6px 2px rgba(200, 200, 200, 0.1), inset -1px -2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.cube-switch.active .switch:after,
+.cube-switch.active .switch:before {
+  background: #dfc9c9;
+  border: none;
+  margin-top: 0;
+  height: 1px;
+}
+
+.cube-switch .switch-state {
+  display: block;
+  position: absolute;
+  left: 40%;
+  color: #000000;
+  font-size: .5em;
+  text-align: center;
+}
+
+.cube-switch .switch-state.on {
+  bottom: 15%;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.cube-switch .switch-state.off {
+  top: 15%;
+  font-weight: bold;
+  font-size: 10px;
+}
+
 .light-bulb {
-    /* position: relative; */
-    width: 150px;
-    height: 150px;
-    float: right;
-    background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat right 0;
-    cursor: crosshair;
-    z-index: 800;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .light-bulb:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    background-position: 0 0;
-    opacity: 0;
-    transition: all 0.5s;
-  }
-  
-  .light-bulb.on:after {
-    opacity: 1;
-  }
+  /* position: relative; */
+  width: 150px;
+  height: 150px;
+  float: right;
+  background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat right 0;
+  cursor: crosshair;
+  z-index: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.light-bulb:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-position: 0 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.light-bulb.on:after {
+  opacity: 1;
+}

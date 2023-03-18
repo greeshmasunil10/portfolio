@@ -28,7 +28,7 @@ const Intro = () => {
   return (
     <div className="body">
       <div className="intro">
-        <animated.div style={helloProps} className="courier">hi, my name is</animated.div>
+        <animated.div style={helloProps} className="courier">Hi, my name is</animated.div>
         <br />
         <animated.h1 style={nameProps} className="my-name">
           Greeshma Sunil
@@ -41,8 +41,6 @@ const Intro = () => {
               "Full-Stack Developer",
               2000,
               "Solution Architect",
-              2000,
-              "Agile Coder",
               2000,
               "Technical Consultant",
               2000,

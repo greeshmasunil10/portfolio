@@ -3,7 +3,6 @@ import "./Styles/App.css";
 import "./Styles/Animations.css";
 import "./Styles/Bulb.css";
 import Home from "./Home";
-import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Lottie from "lottie-react";
 import Animation from "./animation.json";
@@ -33,9 +32,7 @@ const App = () => {
           }
         >
           <div className="App">
-            <header className="header">
-              <NavBar />
-            </header>
+            
             <Home />
           </div>
           <Footer />

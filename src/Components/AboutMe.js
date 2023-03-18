@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="contentStyle">
         <div
           className="courier"
-          style={{ fontSize: "40px", display: "inline" }}
+          // style={{ fontSize: "40px", display: "inline" }}
         >
           .me
         </div>
