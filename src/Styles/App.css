@@ -25,12 +25,12 @@
   --font-body-dark: #000000 !important;
   --nav-bar-color: #32355d !important;
   --content-size: 1rem !important;
-  --footer-color: #ffffff !important;
+  --footer-color: #ecf2f9 !important;
   --bg-grad-1: #e4ddea !important;
-  --bg-grad-2: #ffffff !important;
+  --bg-grad-2: #eae7e7 !important;
   --bg-grad-3: #e4ddea !important;
-  --bg-grad-4: #ffffff !important;
-  --bg-grad-5: #ffffff !important;
+  --bg-grad-4: #f4f4f4 !important;
+  --bg-grad-5: #f8f7f7 !important;
   --cursor-color: 0, 0, 0 !important;
   --button-color: #fff6f6 !important;
   --social-button-color: #373851 !important;
@@ -113,7 +113,7 @@ main {
 }
 
 .home-container {
-  background-color: var(--bg-grad-2);
+  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
@@ -128,7 +128,7 @@ main {
 }
 
 .about-me-container {
-  background-color: var(--bg-grad-3);
+  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
@@ -146,7 +146,7 @@ main {
 }
 
 .projects-container {
-  background-color: var(--bg-grad-4);
+  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;

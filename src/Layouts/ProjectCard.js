@@ -7,7 +7,7 @@ function ProjectCard(props) {
       style={{
         padding: "30px",
         minHeight: "fit-content",
-        backgroundColor: "var(--bg-grad-1)",
+        backgroundColor: "var(--bg-grad-4)",
       }}
     >
       <div>
