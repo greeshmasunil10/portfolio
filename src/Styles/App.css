@@ -26,11 +26,11 @@
   --nav-bar-color: #32355d !important;
   --content-size: 1rem !important;
   --footer-color: #ffffff !important;
-  --bg-grad-1: #ffffff !important;
-  --bg-grad-2: #dbdadc !important;
-  --bg-grad-3: #dbdadc !important;
+  --bg-grad-1: #e4ddea !important;
+  --bg-grad-2: #ffffff !important;
+  --bg-grad-3: #e4ddea !important;
   --bg-grad-4: #ffffff !important;
-  --bg-grad-5: #a5a2a6 !important;
+  --bg-grad-5: #ffffff !important;
   --cursor-color: 0, 0, 0 !important;
   --button-color: #fff6f6 !important;
   --social-button-color: #373851 !important;
@@ -103,6 +103,86 @@ main {
   box-shadow: 0 5px 15px rgba(108, 97, 97, 0.3);
   box-sizing: content-box;
 }
+
+#home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.home-container {
+  background-color: var(--bg-grad-2);
+  box-shadow: 0 4px 6px var(--bg-grad-1);
+  padding: 20px;
+  width: 75vw;
+  margin: 20px auto;
+}
+
+#about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-me-container {
+  background-color: var(--bg-grad-3);
+  box-shadow: 0 4px 6px var(--bg-grad-1);
+  padding: 20px;
+  width: 75vw;
+  margin: 20px auto;
+}
+
+.about-me-container div.content{
+  /* color:white; */
+}
+
+#projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  background-color: var(--bg-grad-4);
+  box-shadow: 0 4px 6px var(--bg-grad-1);
+  padding: 20px;
+  width: 75vw;
+  margin: 20px auto;
+}
+
+#education-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-container {
+  background-color: var(--bg-grad-5);
+  box-shadow: 0 4px 6px var(--bg-grad-1);
+  padding: 20px;
+  width: 75vw;
+  margin: 20px auto;
+}
+
+#contact-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-container {
+  /* background-color: var(--bg-grad-2); */
+  /* box-shadow: 0 4px 6px var(--bg-grad-1); */
+  padding: 20px;
+  /* width: 75vw; */
+  margin: 20px auto;
+}
+
+
+
 
 .my-cursor {
   border-color: "0, 226, 151";
@@ -421,10 +501,10 @@ footer {
     padding: 0 0px;
   }
   .light-bulb {
-    display:none;
+    /* display:none; */
   }
   .cube-switch  {
-    padding: 10px !important;
+    padding: 1px !important;
   }
   .cube-switch .switch {
     width: 20px !important;

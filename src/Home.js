@@ -66,7 +66,7 @@ const Home = () => {
       <header className="header">
         <NavBar />
       </header>
-      <div id="home-section" className="section">
+      <div id="home-section" className="home-container">
         <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
         <Bulb isOn={isLightMode} />
 
@@ -74,22 +74,22 @@ const Home = () => {
         <Intro />
         {/* </div> */}
       </div>
-      <div id="about-me-section" className="section">
+      <div id="about-me-section" className="about-me-container">
         <AboutMe />
       </div>
-      <div id="projects-section" className="section">
+      <div id="projects-section" className="projects-container ">
         <Projects />
       </div>
       <div
         id="education-section"
-        className="section"
+        className="education-container"
         style={{ minHeight: "fit-content" }}
       >
         <Education />
       </div>
       <div
         id="contact-me-section"
-        className="section"
+        className="contact-me-container"
         style={{ minHeight: "fit-content" }}
       >
         <ContactMe />

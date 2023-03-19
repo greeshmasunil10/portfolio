@@ -27,7 +27,7 @@ const Intro = () => {
 
   return (
     <div className="body">
-      <div className="intro">
+      <div className="contentStyle">
         <animated.div style={helloProps} className="courier">Hi, my name is</animated.div>
         <br />
         <animated.h1 style={nameProps} className="my-name">
