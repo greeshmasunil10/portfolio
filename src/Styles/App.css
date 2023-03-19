@@ -14,6 +14,8 @@
   --button-color: #00e297;
   --social-button-color: #2b7d47;
   --nav-bar-color:#000000;
+  --nav-bar-txt-color:var(--font-body-light);
+  --button-bg-color: #1e8475;
 }
 
 .light {
@@ -21,7 +23,7 @@
   --neon-green: #7d6286 !important;
   --font-body-light: #32355d !important;
   --font-body-dark: #000000 !important;
-  --nav-bar-color: 000000 !important;
+  --nav-bar-color: #32355d !important;
   --content-size: 1rem !important;
   --footer-color: #ffffff !important;
   --bg-grad-1: #ffffff !important;
@@ -29,9 +31,11 @@
   --bg-grad-3: #dbdadc !important;
   --bg-grad-4: #ffffff !important;
   --bg-grad-5: #a5a2a6 !important;
-  --cursor-color: 0, 0, 0;
-  --button-color: #fff6f6;
-  --social-button-color: #373851;
+  --cursor-color: 0, 0, 0 !important;
+  --button-color: #fff6f6 !important;
+  --social-button-color: #373851 !important;
+  --nav-bar-txt-color:#ecf2f9 !important;
+  --button-bg-color: #9a7ca5 !important;
 }
 
 .light .courier {
@@ -87,6 +91,7 @@ main {
 }
 
 .section {
+  min-height: fit-content;
   min-height: 100vh;
   /* width: 75vw; */
   /* left:50%; */
@@ -147,8 +152,8 @@ main {
 }
 
 .header {
-  background-color: var(--nav-bar-color);
-  color: var(--nav-bar-color);
+  background-color: var(--nav-bar-color, 0);
+ 
   display: flex;
   justify-content: left;
   align-items: center;
@@ -162,7 +167,7 @@ main {
   box-shadow: 0 5px 15px rgba(56, 52, 52, 0.3);
   box-sizing: content-box;
   width: 100vw;
-  opacity: 0.8; 
+  opacity:0.8;
 }
 
 .header__nav {
@@ -170,6 +175,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  color:#000000;
 }
 
 .header__nav li {
@@ -178,7 +184,7 @@ main {
 }
 
 .header__nav a {
-  color: var(--font-body-light);
+  color: var(--nav-bar-txt-color);
   text-decoration: none;
 }
 
@@ -191,9 +197,6 @@ div.body {
   margin: 20px auto;
   padding: 20px;
   font-size: 2rem;
-  
-  /* text-align: left; */
-  
 }
 
 div.content {
@@ -250,7 +253,7 @@ ul {
 }
 
 .btn:hover {
-  background-color: #46866a;
+  background-color: var(--button-bg-color);
   color: black;
 }
 

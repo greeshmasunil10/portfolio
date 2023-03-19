@@ -63,6 +63,18 @@ const NavBar = () => {
                   Education
                 </ScrollLink>
               </li>
+
+              <li>
+                <ScrollLink
+                  to="contact-me-section"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-60}
+                >
+                  Contact
+                </ScrollLink>
+              </li>
             </ul>
           </nav>
   );

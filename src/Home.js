@@ -80,15 +80,22 @@ const Home = () => {
       <div id="projects-section" className="section">
         <Projects />
       </div>
-      <div id="education-section" className="section">
+      <div
+        id="education-section"
+        className="section"
+        style={{ minHeight: "fit-content" }}
+      >
         <Education />
       </div>
-      <div id="contact-me-section" className="">
+      <div
+        id="contact-me-section"
+        className="section"
+        style={{ minHeight: "fit-content" }}
+      >
         <ContactMe />
       </div>
 
       <ScrollToTopButton handleScrollTop={handleScrollTop} />
-      
     </main>
   );
 };
