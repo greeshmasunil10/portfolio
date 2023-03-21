@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-macros": "^3.1.0",
     "bodymovin": "^4.13.0",
+    "dotenv": "^16.0.3",
     "framer-motion": "^9.0.1",
     "locomotive-scroll": "^4.1.4",
     "lottie-react": "^2.4.0",

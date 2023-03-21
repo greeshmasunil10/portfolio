@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import Lottie from "lottie-react";
 import Animation from "./animation.json";
 
+
 const App = () => {
   const [showContent, setShowContent] = useState(false);
   
