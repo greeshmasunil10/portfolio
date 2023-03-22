@@ -64,7 +64,7 @@ function Projects() {
 
           <br />
 
-          <p style={{ fontSize: "25px", fontWeight: "bold" }}>
+          <p style={{ fontSize: "20px", fontWeight: "bold" }}>
             <FontAwesomeIcon icon={faFileClipboard} /> More projects on{" "}
             <a
               href="https://github.com/greeshmasunil10"

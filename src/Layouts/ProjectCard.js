@@ -12,7 +12,7 @@ function ProjectCard(props) {
     >
       <div>
         {" "}
-        <div className="courier" style={{ fontSize: 30, padding: "20px" }}>
+        <div className="courier" style={{ fontSize: "25px", padding: "5px" }}>
           {props.projectName}
         </div>
         <strong>Technologies used:</strong> {props.technologiesUsed}
@@ -40,7 +40,7 @@ function ProjectCard(props) {
         >
           {props.appURLText}
         </a>
-        <div
+        <div className=""
           dangerouslySetInnerHTML={{ __html: props.projectDescription }}
         ></div>{" "}
       </div>

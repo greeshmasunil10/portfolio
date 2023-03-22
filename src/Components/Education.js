@@ -5,7 +5,7 @@ const Education = () => (
     <h2 className="heading">Education</h2>
     <ul className="contentStyle">
       <li>
-        <div className="content" style={{fontWeight:"bold", fontSize:"1.5rem"}}>
+        <div className="content" style={{fontWeight:"bold", fontSize:"1.2rem"}}>
           Master of Applied Computer Science - Concordia University, Montreal
         </div>
 
@@ -19,7 +19,7 @@ const Education = () => (
         </ul>
       </li>
       <li>
-        <div className="content" style={{fontWeight:"bold", fontSize:"1.5rem"}}>
+        <div className="content" style={{fontWeight:"bold", fontSize:"1.2rem"}}>
           Bachelor of Technology in Computer Science - VIT University, Vellore
         </div>
         <ul>

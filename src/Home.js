@@ -39,7 +39,7 @@ const Home = () => {
     });
   };
 
-  const [isLightMode, setIsLightMode] = useState(true);
+  const [isLightMode, setIsLightMode] = useState(false);
 
   const handleToggleMode = () => {
     setIsLightMode(!isLightMode);

@@ -3,7 +3,7 @@
   --neon-green: #00e297;
   --font-body-light: #bac4e3;
   --font-body-dark: #a8afc2;
-  --content-size: 1rem;
+  --content-size: 1.1rem;
   --footer-color: #1e2421;
   --bg-grad-1: #141d18 !important;
   --bg-grad-2: #000000 !important;
@@ -48,7 +48,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #141d18;
 }
 
 .lottie-container {
@@ -196,7 +196,7 @@ main {
 .tagline {
   text-align: left;
   color: var(--font-body-dark);
-  font-size: 40px;
+  font-size: var(--content-size+0.5);
 }
 
 .my-name {
@@ -260,7 +260,7 @@ main {
 
 .header__nav li {
   margin: 0 15px;
-  font-size: 20px;
+  font-size: var(--content-size);
 }
 
 .header__nav a {
@@ -276,14 +276,14 @@ div.body {
   max-width: 120vb;
   margin: 20px auto;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 div.content {
   max-width: 1000px;
   margin: 0px auto;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: var(--content-size);
   font-weight: 500;
   color: var(--font-body-dark);
   font-family: Tahoma, Geneva, Tahoma;
