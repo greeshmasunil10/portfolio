@@ -8,7 +8,7 @@ const Footer = () => {
   const [views, setViews] = useState(null);
 
   useEffect(() => {
-    const url = "https://api.github.com/repos/greeshmasunil10/portfolio/traffic/clones";
+    const url = "https://api.github.com/repos/greeshmasunil10/portfolio/traffic/clones?per=day";
    
     fetch(url, {
       headers: {
@@ -24,7 +24,7 @@ const Footer = () => {
   }, []);
 
   useEffect(() => {
-    const url = "https://api.github.com/repos/greeshmasunil10/portfolio/traffic/views";
+    const url = "https://api.github.com/repos/greeshmasunil10/portfolio/traffic/views?per=day";
    
     fetch(url, {
       headers: {
