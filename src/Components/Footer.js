@@ -56,7 +56,7 @@ const Footer = () => {
           )}
           {views && (
             <span style={{ marginLeft: "10px"}}>
-              | {views} Views
+              | {views} Views | Weekly Stats
             </span>
           )}
         </a>
