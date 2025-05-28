@@ -3,16 +3,16 @@ import React from "react";
 function ProjectCard(props) {
   return (
     <div
-      className="section"
+      className="project-card"
       style={{
         padding: "30px",
         minHeight: "fit-content",
-        backgroundColor: "var(--bg-grad-4)",
+        backgroundColor: "var(--project-card-bg)",
       }}
     >
       <div>
         {" "}
-        <div className="courier" style={{ fontSize: "25px", padding: "5px" }}>
+        <div className="courier" style={{ fontSize: "25px", padding: "0px" }}>
           {props.projectName}
         </div>
         <strong>Technologies used:</strong> {props.technologiesUsed}
@@ -32,14 +32,25 @@ function ProjectCard(props) {
             {props.appURLText}
           </span>
         </a>
-        <a
+        {/* <a
           className="img-url-label"
           href="https://winter-ly.herokuapp.com"
           target="_blank"
           rel="noreferrer" 
         >
           {props.appURLText}
-        </a>
+        </a> */}
+        {props.imageLabelOpacity === "1" && (
+  <a
+    className="img-url-label"
+    href={props.liveAppLink}
+    target="_blank"
+    rel="noreferrer"
+  >
+    {props.appURLText}
+  </a>
+)}
+
         <div className=""
           dangerouslySetInnerHTML={{ __html: props.projectDescription }}
         ></div>{" "}

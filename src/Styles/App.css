@@ -1,15 +1,16 @@
 :root {
   --bgm-color: #040a11;
   --neon-green: #00e297;
-  --font-body-light: #bac4e3;
-  --font-body-dark: #a8afc2;
+  --font-body-light: #e6e6f2;
+  --font-body-dark: #d1d6e3;
   --content-size: 1.1rem;
   --footer-color: #1e2421;
   --bg-grad-1: #141d18 !important;
-  --bg-grad-2: #000000 !important;
+  --bg-grad-2: #3f4542 !important;
   --bg-grad-3: #000000 !important;
-  --bg-grad-4: #141d18 !important;
+  --bg-grad-4: #213b2d !important;
   --bg-grad-5: #000000 !important;
+  --project-card-bg:#1c261d !important;
   --cursor-color: 0, 300, 0;
   --button-color: #00e297;
   --social-button-color: #2b7d47;
@@ -19,64 +20,90 @@
 }
 
 .light {
-  --bgm-color:            #fce4ec !important;
-  --neon-green:           #81c784 !important;
-  --font-body-light:      #4a4a4a !important;
-  --font-body-dark:       #1e1e1e !important;
-  --nav-bar-color:        #ec407a !important;
-  --content-size:         1rem !important;
-  --footer-color:         #f1f8e9 !important;
-  --bg-grad-1:            #ffe4f0 !important;
-  --bg-grad-2:            #f0fff0 !important;
-  --bg-grad-3:            #fff0f5 !important;
-  --bg-grad-4:            #f0fff0 !important;
+  --bgm-color:            #f4f3ef !important;        /* Stone white */
+  --neon-green:           #5e7b55 !important;        /* Moss green */
+  --font-body-light:      #2f2d29 !important;        /* Forest soil */
+  --font-body-dark:       #151513 !important;        /* Earth core */
+  --nav-bar-color:        #3d4a3b !important;        /* Deep olive */
+  --content-size:         1.1rem !important;
+  --footer-color:         #e6e2d9 !important;        /* Pebble sand */
+  --bg-grad-1:            #e8e6df !important;        /* Foggy limestone */
+  --bg-grad-2:            #dcd9cf !important;        /* Dusty sage */
+  --bg-grad-3:            #f8f7f3 !important;        /* Linen sunlight */
+  --bg-grad-4:            #eceae5 !important;        /* Dry clay */
   --bg-grad-5:            #ffffff !important;
-  --cursor-color:         30, 30, 30 !important;
+  --project-card-bg:      #f7f6f2 !important;        /* Pressed paper */
+  --cursor-color:         70, 90, 60 !important;
   --button-color:         #ffffff !important;
-  --social-button-color:  #388e3c !important;
-  --nav-bar-txt-color:    #fff8f9 !important;
-  --button-bg-color:      #f06292 !important;
+  --social-button-color:  #4b5e42 !important;        /* Mossy shadow */
+  --nav-bar-txt-color:    #ffffff !important;
+  --button-bg-color:      #7a8d6a !important;        /* Sage + clay */
 }
 
+/* .root {
+  background-image: url('https://images.unsplash.com/photo-1748326752595-1ffde6d86461?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+} */
 
 
-
-.light .courier {
-  /* font-weight: bold; */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* font-variant-caps:all-small-caps; */
-  font-weight: bold;
-  /* font-style: italic; */
-}
-
-body {
-  background-color: #141d18;
-}
-
-.lottie-container {
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 20%;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: fadeOut 2s ease-in-out forwards;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
+.light {
+  background-image: url('https://images.unsplash.com/photo-1506624682682-13fa0130f321?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
 }
 
 main {
+  margin-top: 70px;
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-grad-1),
+    var(--bg-grad-2),
+    var(--bg-grad-3),
+    var(--bg-grad-4),
+    var(--bg-grad-5)
+  );
+  background-image: url('https://plus.unsplash.com/premium_photo-1676198153022-d92737932e57?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmVvbiUyMHNpZ25zJTIwY29kaW5nfGVufDB8fDB8fHww?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  color: var(--font-body-light);
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+}
+
+root .transparent-section {
+  background-color: rgba(20, 19, 19, 0.5); /* adjust alpha as needed */
+  /* backdrop-filter: blur(8px); */
+  /* -webkit-backdrop-filter: blur(8px); */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+/* 
+main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  color: var(--font-body-light);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+} */
+
+
+/* main {
   margin-top: 70px;
   font-family: "Open Sans", sans-serif;
   background-image: linear-gradient(
@@ -91,7 +118,55 @@ main {
   line-height: 1.5;
   overflow-x: hidden;
   position: relative;
+} */
+
+.light .courier {
+  /* font-weight: bold; */
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica;
+  /* font-variant-caps:all-small-caps; */
+  font-weight: bold;
+  /* font-style: italic; */
 }
+
+body {
+  background-color: #141d18;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.2s ease-in forwards;
+}
+@keyframes fadeInAnimation {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.lottie-container {
+  
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 20%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 2s ease-in-out forwards;
+
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+
 
 #home-section {
   display: flex;
@@ -106,7 +181,11 @@ main {
   padding: 20px;
   width: 75vw;
   margin: 20px auto;
+  border-radius: 10px;
+  
 }
+
+
 
 #about-me-section {
   display: flex;
@@ -140,6 +219,43 @@ main {
   width: 75vw;
   margin: 20px auto;
 }
+.project-card {
+  padding: 30px;
+  min-height: fit-content;
+  background-color: var(--bg-grad-4);
+  border-radius: 5px;
+  transform: perspective(1000px) translateZ(0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-bottom: 50px;
+  /* 3D glassmorphism effect with subtle inner shadow */
+  background: rgba(34, 49, 63, 0.85);
+  backdrop-filter: blur(8px) saturate(120%);
+  box-shadow:
+    0 10px 15px rgba(96, 83, 83, 0.15),
+    0 25px 30px rgba(0, 0, 0, 0.1),
+    inset 0 2px 16px 0 rgba(0,0,0,0.18),
+    0 1.5px 3px 0 rgba(0, 226, 151, 0.08);
+}
+
+.project-card:hover {
+  transform: perspective(1000px) translateY(-10px) scale(1.02);
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 226, 151, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+
+.project-title {
+  font-size: 25px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.project-description {
+  margin-top: 15px;
+}
+
 
 #education-section {
   display: flex;
@@ -191,6 +307,10 @@ main {
   font-size: 7rem;
   font-family: "Great Vibes", Arial;
   padding: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .scroll-to-top-button {
@@ -274,7 +394,7 @@ div.content {
   font-size: var(--content-size);
   font-weight: 500;
   color: var(--font-body-dark);
-  font-family: Tahoma, Geneva, Tahoma;
+  font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Verdana, sans-serif;
 }
 
 .courier {
@@ -404,9 +524,11 @@ a {
 }
 
 .social-icons a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  background-color: #00e297;
+  color: #000;
 }
+
 
 .social-icons a i {
   font-size: 24px;
@@ -461,6 +583,7 @@ footer {
   .my-name {
     font-size: 3.5rem !important;
   }
+  
   .btn {
     width: fit-content !important;
     font-size: 20px !important;

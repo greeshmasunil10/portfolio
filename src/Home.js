@@ -16,8 +16,8 @@ class Switch extends React.Component {
     return (
       <div className={switchClass}>
         <span className="switch" onClick={this.props.onSwitched}>
-          <span className="switch-state off">OFF</span>
-          <span className="switch-state on">ON</span>
+          <span className="switch-state off"> O</span>
+          <span className="switch-state on">  |</span>
         </span>
       </div>
     );
@@ -66,7 +66,7 @@ const Home = () => {
       <header className="header">
         <NavBar />
       </header>
-      <div id="home-section" className="home-container">
+      <div id="home-section" className="home-container transparent-section">
         <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
         <Bulb isOn={isLightMode} />
 
@@ -74,22 +74,22 @@ const Home = () => {
         <Intro />
         {/* </div> */}
       </div>
-      <div id="about-me-section" className="about-me-container">
+      <div id="about-me-section" className="about-me-container transparent-section">
         <AboutMe />
       </div>
-      <div id="projects-section" className="projects-container ">
+      <div id="projects-section" className="projects-container transparent-section">
         <Projects />
       </div>
       <div
         id="education-section"
-        className="education-container"
+        className="education-container transparent-section"
         style={{ minHeight: "fit-content" }}
       >
         <Education />
       </div>
       <div
         id="contact-me-section"
-        className="contact-me-container"
+        className="contact-me-container transparent-section"
         style={{ minHeight: "fit-content" }}
       >
         <ContactMe />

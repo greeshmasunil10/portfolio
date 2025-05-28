@@ -30,7 +30,6 @@ const AboutMe = () => {
 
   <p />
 
-  I’m driven by a mission to design AI-powered solutions that streamline support, reduce operational load, and elevate customer satisfaction through Conversational AI.
 </div>
 
 
