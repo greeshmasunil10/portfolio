@@ -11,7 +11,7 @@ import {
 function Projects() {
   return (
     <div className="body">
-      <h2 className="heading">Projects</h2>
+      <h2 className="heading">Things I’ve Built for fun</h2>
       <div className="contentStyle">
         <div className="content">
           <ProjectCard

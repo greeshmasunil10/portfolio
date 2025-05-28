@@ -36,13 +36,15 @@ const Intro = () => {
         <animated.div style={tagLineProps}  className="tagline">
           <TypeAnimation
             sequence={[
-              "Software Engineer",
+              "Conversational AI Developer",
               2000,
-              "Full-Stack Developer",
+              "AI & Automation Engineer",
               2000,
-              "Solution Architect",
+              "Solution Designer",
               2000,
               "Technical Consultant",
+              2000,
+              "Software Engineer",
               2000,
               () => {},
             ]}

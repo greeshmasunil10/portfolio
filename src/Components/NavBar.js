@@ -48,7 +48,7 @@ const NavBar = () => {
                   spy={true}
                   offset={-60}
                 >
-                  Projects
+                  Things I’ve Built for fun
                 </ScrollLink>
               </li>
 
