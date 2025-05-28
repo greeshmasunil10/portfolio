@@ -21,13 +21,13 @@
 }
 
 .light {
-  --bgm-color:            #f4f3ef !important;
+  --bgm-color:            #000000 !important;
   --neon-green:           #6d3820 !important;
   --font-body-light:      #2f2d29 !important;
   --font-body-dark:       #151513 !important;
   --nav-bar-color:        #3d4a3b !important;
   --content-size:         1.1rem !important;
-  --footer-color:         #e6e2d9 !important;
+  --footer-color:         #9c7b30 !important;
   --bg-grad-1:            #e8e6df !important;
   --bg-grad-2:            #dcd9cf !important;
   --bg-grad-3:            #f8f7f3 !important;
@@ -42,6 +42,7 @@
   --box-transparency: 0.35;      
 }
 
+
 .home-container,
 .about-me-container,
 .projects-container,
@@ -51,8 +52,22 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 12px;
+  transform: scale(0.90);
+  margin: 20px auto;
+
+  /* transform-origin: top center; */
   /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main {
+  width: 100vw;
+  min-height: 100vh;
+} */
+
 
 .light {
   background-image: url('https://images.unsplash.com/photo-1506624682682-13fa0130f321?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
@@ -63,16 +78,16 @@
 }
 
 main {
-  margin-top: 70px;
+  padding-top: 70px;
   font-family: "Open Sans", sans-serif;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     var(--bg-grad-1),
     var(--bg-grad-2),
     var(--bg-grad-3),
     var(--bg-grad-4),
     var(--bg-grad-5)
-  );
+  ); */
   background-image: url('https://plus.unsplash.com/premium_photo-1676198153022-d92737932e57?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmVvbiUyMHNpZ25zJTIwY29kaW5nfGVufDB8fDB8fHww?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,7 +163,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .about-me-container {
@@ -171,7 +185,7 @@ body {
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .project-card {
   padding: 30px;
@@ -218,7 +232,7 @@ body {
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 #contact-me-section {

@@ -2,16 +2,16 @@
 .cube-switch {
   cursor: default;
   float: right;
-  vertical-align: top;
-  overflow: hidden;
-  pointer-events: none;
-  margin-top: 10px;
-  padding: 70px 20px 20px 20px; /* Added 10px extra padding to the top */
+  /* vertical-align: top; */
+  /* overflow: hidden; */
+  /* pointer-events: none; */
+  /* margin-top: 10px; */
+  /* padding: 70px 20px 20px 20px; Added 10px extra padding to the top */
   padding-right: 30px;
   position: fixed;
-  top: 0;
+  top: 65px;
   right: 0;
-  z-index: 1000;
+  z-index: 800;
 }
 
 /* The switch */
@@ -78,11 +78,12 @@
   height: 150px;
   float: right;
   background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat right 0;
-  cursor: crosshair;
   z-index: 800;
   position: fixed;
   top: 55px; 
   left: 0;
+  cursor: pointer;
+
 }
 
 .light-bulb:after {

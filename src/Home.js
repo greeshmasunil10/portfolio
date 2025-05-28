@@ -66,7 +66,7 @@ const Home = () => {
       <header className="header">
         <NavBar />
       </header>
-              <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
+        <Switch isOn={isLightMode} onSwitched={handleToggleMode} />
         <Bulb isOn={isLightMode} />
       <div id="home-section" className="home-container transparent-section">
 
