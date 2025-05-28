@@ -74,15 +74,14 @@
 }
 
 .light-bulb {
-  /* position: relative; */
   width: 150px;
   height: 150px;
   float: right;
   background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat right 0;
   cursor: crosshair;
   z-index: 800;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 55px; /* Adjust this value to match your navbar height */
   left: 0;
 }
 
