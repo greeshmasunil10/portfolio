@@ -9,7 +9,7 @@
   --bg-grad-2: #3f4542 !important;
   --bg-grad-3: #000000 !important;
   --bg-grad-4: #213b2d !important;
-  --bg-grad-5: #000000 !important;
+  --bg-grad-5: 19, 18, 18 !important;
   --project-card-bg:#1c261d !important;
   --cursor-color: 0, 300, 0;
   --button-color: #00e297;
@@ -17,37 +17,42 @@
   --nav-bar-color:#000000;
   --nav-bar-txt-color:var(--font-body-light);
   --button-bg-color: #1e8475;
+  --box-transparency: 0.6;    
 }
 
 .light {
-  --bgm-color:            #f4f3ef !important;        /* Stone white */
-  --neon-green:           #5e7b55 !important;        /* Moss green */
-  --font-body-light:      #2f2d29 !important;        /* Forest soil */
-  --font-body-dark:       #151513 !important;        /* Earth core */
-  --nav-bar-color:        #3d4a3b !important;        /* Deep olive */
+  --bgm-color:            #f4f3ef !important;
+  --neon-green:           #6d3820 !important;
+  --font-body-light:      #2f2d29 !important;
+  --font-body-dark:       #151513 !important;
+  --nav-bar-color:        #3d4a3b !important;
   --content-size:         1.1rem !important;
-  --footer-color:         #e6e2d9 !important;        /* Pebble sand */
-  --bg-grad-1:            #e8e6df !important;        /* Foggy limestone */
-  --bg-grad-2:            #dcd9cf !important;        /* Dusty sage */
-  --bg-grad-3:            #f8f7f3 !important;        /* Linen sunlight */
-  --bg-grad-4:            #eceae5 !important;        /* Dry clay */
-  --bg-grad-5:            #ffffff !important;
-  --project-card-bg:      #f7f6f2 !important;        /* Pressed paper */
-  --cursor-color:         70, 90, 60 !important;
+  --footer-color:         #e6e2d9 !important;
+  --bg-grad-1:            #e8e6df !important;
+  --bg-grad-2:            #dcd9cf !important;
+  --bg-grad-3:            #f8f7f3 !important;
+  --bg-grad-4:            #eceae5 !important;
+  --bg-grad-5:            255, 255, 205 !important;
+  --project-card-bg:      #f7f6f2 !important;
+  --cursor-color:         0, 0, 0 !important;
   --button-color:         #ffffff !important;
-  --social-button-color:  #4b5e42 !important;        /* Mossy shadow */
+  --social-button-color:  #4b5e42 !important;
   --nav-bar-txt-color:    #ffffff !important;
-  --button-bg-color:      #7a8d6a !important;        /* Sage + clay */
+  --button-bg-color:      #7a8d6a !important;  
+  --box-transparency: 0.35;      
 }
 
-/* .root {
-  background-image: url('https://images.unsplash.com/photo-1748326752595-1ffde6d86461?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-attachment: fixed;
-} */
-
+.home-container,
+.about-me-container,
+.projects-container,
+.education-container,
+.contact-me-container {
+  background-color: rgba(var(--bg-grad-5), var(--box-transparency)); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); */
+}
 
 .light {
   background-image: url('https://images.unsplash.com/photo-1506624682682-13fa0130f321?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGVhcnRoeXxlbnwwfHwwfHx8MA%3D%3D?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=800&q=80');
@@ -80,52 +85,13 @@ main {
 }
 
 root .transparent-section {
-  background-color: rgba(20, 19, 19, 0.5); /* adjust alpha as needed */
-  /* backdrop-filter: blur(8px); */
-  /* -webkit-backdrop-filter: blur(8px); */
+  background-color: rgba(20, 19, 19, 0.5);
   border-radius: 10px;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
-
-
-/* 
-main {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
-  color: var(--font-body-light);
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  overflow-x: hidden;
-  position: relative;
-} */
-
-
-/* main {
-  margin-top: 70px;
-  font-family: "Open Sans", sans-serif;
-  background-image: linear-gradient(
-    to bottom,
-    var(--bg-grad-1),
-    var(--bg-grad-2),
-    var(--bg-grad-3),
-    var(--bg-grad-4),
-    var(--bg-grad-5)
-  );
-  color: var(--font-body-light);
-  line-height: 1.5;
-  overflow-x: hidden;
-  position: relative;
-} */
-
 .light .courier {
-  /* font-weight: bold; */
   font-family: 'Poppins', 'Helvetica Neue', Helvetica;
-  /* font-variant-caps:all-small-caps; */
   font-weight: bold;
-  /* font-style: italic; */
 }
 
 body {
@@ -142,7 +108,6 @@ body {
 }
 
 .lottie-container {
-  
   justify-content: center;
   align-items: center;
   width: 20%;
@@ -152,7 +117,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: fadeOut 2s ease-in-out forwards;
-
 }
 
 @keyframes fadeOut {
@@ -165,9 +129,6 @@ body {
   }
 }
 
-
-
-
 #home-section {
   display: flex;
   justify-content: center;
@@ -176,16 +137,12 @@ body {
 }
 
 .home-container {
-  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
   margin: 20px auto;
   border-radius: 10px;
-  
 }
-
-
 
 #about-me-section {
   display: flex;
@@ -195,7 +152,6 @@ body {
 }
 
 .about-me-container {
-  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
@@ -203,7 +159,6 @@ body {
 }
 
 .about-me-container div.content{
-  /* color:white; */
 }
 
 #projects-section {
@@ -213,7 +168,6 @@ body {
 }
 
 .projects-container {
-  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
@@ -227,7 +181,6 @@ body {
   transform: perspective(1000px) translateZ(0);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   margin-bottom: 50px;
-  /* 3D glassmorphism effect with subtle inner shadow */
   background: rgba(34, 49, 63, 0.85);
   backdrop-filter: blur(8px) saturate(120%);
   box-shadow:
@@ -245,7 +198,6 @@ body {
     inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-
 .project-title {
   font-size: 25px;
   padding: 0;
@@ -256,7 +208,6 @@ body {
   margin-top: 15px;
 }
 
-
 #education-section {
   display: flex;
   justify-content: center;
@@ -264,7 +215,6 @@ body {
 }
 
 .education-container {
-  background-color: var(--bg-grad-5);
   box-shadow: 0 4px 6px var(--bg-grad-1);
   padding: 20px;
   width: 75vw;
@@ -278,15 +228,9 @@ body {
 }
 
 .contact-me-container {
-  /* background-color: var(--bg-grad-2); */
-  /* box-shadow: 0 4px 6px var(--bg-grad-1); */
   padding: 20px;
-  /* width: 75vw; */
   margin: 20px auto;
 }
-
-
-
 
 .my-cursor {
   border-color: "0, 226, 151";
@@ -341,7 +285,6 @@ html {
 
 .header {
   background-color: var(--nav-bar-color, 0);
- 
   display: flex;
   justify-content: left;
   align-items: center;
@@ -400,7 +343,6 @@ div.content {
 .courier {
   color: var(--neon-green);
   font-family: "Courier New", Courier, monospace;
-  /* font-size: 35px; */
 }
 
 .heading {
@@ -428,13 +370,11 @@ ul {
   background-color: #010814;
   color: var(--button-color);
   font-family: "Courier New", Courier, monospace;
-
   border-radius: 5px;
   text-align: left;
   font-size: 25px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-
   border: 2px solid rgb(82, 81, 88);
   padding: 10px 50px;
   border-radius: 15px;
@@ -450,12 +390,6 @@ a {
   color: #748fc1;
   text-decoration: none;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .jumbotron h2 {
-    margin-top: 10px;
-  }
-} */
 
 .app-img {
   width: 80%;
@@ -495,7 +429,6 @@ a {
   opacity: 0;
 }
 
-/* ContactMe Component */
 .contact-me {
   padding: 40px 0;
   text-align: center;
@@ -529,7 +462,6 @@ a {
   color: #000;
 }
 
-
 .social-icons a i {
   font-size: 24px;
   padding-top: 2px;
@@ -542,10 +474,8 @@ footer {
   font-size: small;
   font-family: "Courier New", Courier, monospace;
   color: white;
-  /* padding: 20px; */
 }
 
-/* For small screens (up to 576px) */
 @media (max-width: 576px) {
   .app-img {
     width: 100%;
@@ -608,11 +538,9 @@ footer {
 
   .header__nav li {
     font-size: 12px !important;
-    /* max-width: 40px; */
     padding: 0 0px;
   }
   .light-bulb {
-    /* display:none; */
   }
   .cube-switch  {
     padding: 1px !important;
@@ -630,7 +558,6 @@ footer {
     min-height: fit-content;
     min-height: 100vh;
     width: 65vw;
-    /* left:50%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -641,7 +568,6 @@ footer {
   }
 }
 
-/* For medium screens (between 576px and 992px) */
 @media (min-width: 576px) and (max-width: 992px) {
   .app-img {
     width: 80%;
@@ -649,7 +575,6 @@ footer {
   }
 }
 
-/* For large screens (above 992px) */
 @media (min-width: 992px) {
   .app-img {
     width: 70%;

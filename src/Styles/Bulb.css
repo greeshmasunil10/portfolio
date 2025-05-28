@@ -81,7 +81,7 @@
   cursor: crosshair;
   z-index: 800;
   position: fixed;
-  top: 55px; /* Adjust this value to match your navbar height */
+  top: 55px; 
   left: 0;
 }
 
